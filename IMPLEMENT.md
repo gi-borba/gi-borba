@@ -12,23 +12,46 @@ Página Institucional Única para Aulas de Yoga da experiente professora Gi Borb
 
 - Totalmente responsivo, design mobile-first, desktop-second e tablet-third
 - O site deve ser intuitivo e de fácil navegação.
-- O site deve ser otimizado para SEO e GEO
-- O site deve ser otimizado para performance.
-- O site deve ser otimizado para acessibilidade.
-- O site deve ser otimizado para segurança.
 - A Estrutura fornecida assim como o conteudo deve ser seguido a risca. **Não pode ser alterado**
-- **Incluir todas as tags de acessibilidade, SEO e GEO que achar necessário para o bom ranqueamento e citabilidade do site**
+
+
 - Todos os textos devem estar em Português - Brasil
 - Todos os elementos devem possuir ids, títulos semânticos, alt tags, aria-label, etc
-- Para as FAQ usar `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\FAQ.md`
-- Para o glossário usar `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\GLOSSARIO.MD`
-- Para gerar a página da `Política de Privacidade` utilize `/politica-de-privacidade` com o texto `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\politica-de-privacidade-giborba.md`
-- Para gerar a página da `Termos de Uso` utilize `/termos-de-uso` com o texto `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\termos-de-uso-giborba.md`
+
 - Manter um icone flutuante de whatsapp no canto inferior direito
 
 ## Design
 
-Utilizar o design "Clean Modern - Boho" para o site utilizando as diretrizes em: `https://api.anthropic.com/v1/design/h/KQaCx5WenmzSw3xkJgWSHQ`
+Utilizar o design/template definido nos arquivos da pasta `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\design`
+
+## Fontes
+
+Localizadas em `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\gi-borba\fonts`
+
+### Imagens
+
+Pasta com as imagens: `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\gi-borba\images`
+
+- Foto da Gi `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\giborba\website-gi-borba\gi-borba\images\prof-yoga-gi-borba.png`
+
+- Logos:
+
+  - `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\gi-borba\images\Logo Branco Sem Fundo.png`
+  - `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\gi-borba\images\Logo Marrom Sem Fundo.png`
+  - `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\gi-borba\images\Logo Preto Sem Fundo.png`
+
+### Videos
+
+Pasta: `C:\Users\Dullio Macedo\OneDrive\Documents\Arquivos Antigravity\workspaces\dm-content-creator\gi-borba\videos`
+
+- VSL: `videos\vsl-gi-borba-yoga-mae.mp4` utilizar o formato retrato (1080x1920)
+
+- Depoimentos em vídeo:
+
+  - `/videos/gi-borba-depoimento-1.mp4`
+  - `/videos/gi-borba-depoimento-2.mp4`
+  - `/videos/gi-borba-depoimento-3.mp4`
+  - `/videos/gi-borba-depoimento-4.mp4`
 
 ## Estrutura de Páginas
 
@@ -40,7 +63,7 @@ CTA: Agendar aula gratuita
 
 ### VSL
 
-Player com thumb para carregamento `videos\vsl-gi-borba-yoga-mae.mp4`, centralizado
+Player com thumb para carregamento `videos\vsl-gi-borba-yoga-mae.mp4`, retrato (1080x1920) centralizado
 
 ### PROMESSA
 
@@ -286,13 +309,13 @@ Sem cartão de crédito. Sem compromisso. Apenas a experiência.
 
 Gi responde
 
-Inserir FAQs do arquivo
+simular 10 faqs
 
 ### GLOSSÁRIO
 
 Termos usados
 
-Inserir Termos do arquivo
+simular 10 termos
 
 ### CONTATO
 
