@@ -264,8 +264,13 @@ function initForm() {
   if (!form) return;
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    var success = document.querySelector('.form-success');
+    var nome = document.getElementById('form-nome').value;
+    var whatsapp = document.getElementById('form-whatsapp').value;
+    var mensagem = document.getElementById('form-mensagem').value;
+    var msg = 'Nome: ' + nome + '\nWhatsApp: ' + whatsapp + (mensagem ? '\nMensagem: ' + mensagem : '');
+    window.open('https://wa.me/5511987530304?text=' + encodeURIComponent(msg), '_blank');
     form.style.display = 'none';
+    var success = document.querySelector('.form-success');
     if (success) success.classList.add('visible');
   });
 }
