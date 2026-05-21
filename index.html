@@ -41,52 +41,461 @@
 
   <!-- Schema: FAQ -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "O que é yoga e para que serve?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yoga é uma prática que combina posturas físicas, respiração consciente e atenção ao corpo. Serve para reduzir ansiedade, melhorar o sono, aliviar dores crônicas e recuperar a sensação de equilíbrio. Não é religião, não exige flexibilidade e não depende de nenhuma crença espiritual — funciona por biologia, não por misticismo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Posso fazer yoga sem ser flexível?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sim. Flexibilidade não é pré-requisito para o yoga — é consequência. Quem começa sem flexibilidade tem exatamente o yoga que precisa: adaptado ao corpo que tem hoje. Com prática regular, o tecido conjuntivo cede gradualmente, e a abertura acontece de dentro para fora."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Yoga online ao vivo funciona tanto quanto o presencial?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Para a maioria das pessoas, sim — desde que seja ao vivo com professor que vê os alunos, não aula gravada. A correção verbal e visual, a presença, a adaptação em tempo real e a relação com a professora se mantêm integralmente online."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Em quanto tempo o yoga produz resultados perceptíveis?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Os primeiros resultados são rápidos: melhora do sono e redução de ansiedade costumam aparecer nas primeiras duas semanas de prática consistente. Flexibilidade e redução de dores crônicas aparecem entre 4 e 8 semanas."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "É tarde para começar yoga aos 40, 50 ou 60 anos?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Não. O yoga é uma das práticas com menor barreira de entrada para adultos mais velhos. Não há limite de idade para começar, e os benefícios são proporcionalmente maiores para quem começa depois dos 40."
-        }
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O que é yoga e para que serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yoga é uma prática que combina posturas físicas, respiração consciente e atenção ao corpo. Serve para reduzir ansiedade, melhorar o sono, aliviar dores crônicas e recuperar a sensação de equilíbrio. Não é religião, não exige flexibilidade e não depende de nenhuma crença espiritual — funciona por biologia, não por misticismo."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga e ioga: qual a forma correta de escrever?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As duas formas estão corretas em português brasileiro. \"Ioga\" é a grafia aportuguesada, adotada pelo Acordo Ortográfico de 1990. \"Yoga\" é a grafia original em sânscrito e a mais usada no Brasil em contexto cotidiano, profissional e nas buscas online. Ambas se referem à mesma prática."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que significa yoga em sânscrito?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "\"Yoga\" vem da raiz sânscrita \"yuj\", que significa unir, conectar, integrar. A tradução mais precisa é \"união\" — a integração entre corpo, mente e respiração. Não é uma tradução poética: é uma descrição literal do que a prática faz fisiologicamente — criar coerência entre sistemas que habitualmente operam em conflito."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Onde surgiu o yoga e qual é sua origem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O yoga surgiu na Índia há mais de 5.000 anos, desenvolvido dentro das tradições filosóficas do subcontinente indiano. Os primeiros registros escritos aparecem nos Vedas, textos sagrados indianos. A sistematização da prática como a conhecemos hoje — com posturas, respiração e meditação integradas — foi compilada por Patañjali nos Yoga Sutras, por volta do ano 400 d.C."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga é exercício físico ou prática espiritual?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yoga é as duas coisas — e também pode ser nenhuma das duas. É uma prática que tem dimensão física (posturas, força, flexibilidade), dimensão mental (atenção, regulação do sistema nervoso) e, para quem escolher, dimensão filosófica ou espiritual. Cada praticante decide até onde quer ir. Os benefícios físicos e mentais estão disponíveis independentemente de qualquer escolha espiritual."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga conta como exercício físico segundo a OMS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. A OMS classifica yoga como atividade física moderada a vigorosa, dependendo da modalidade. Modalidades ativas como Vinyasa e Yoga HIIT atingem frequência cardíaca comparável a uma caminhada acelerada ou corrida leve. Modalidades mais suaves como Hatha e Restaurativo promovem benefícios musculares, de flexibilidade e de regulação do sistema nervoso sem carga cardiovascular intensa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer yoga sem ser flexível?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Flexibilidade não é pré-requisito para o yoga — é consequência. Quem começa sem flexibilidade tem exatamente o yoga que precisa: adaptado ao corpo que tem hoje. Forçar além do que o corpo oferece não acelera o processo — machuca. Com prática regular, o tecido conjuntivo cede gradualmente, e a abertura acontece de dentro para fora."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como fazer yoga em casa para iniciantes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para começar yoga em casa: escolha um espaço com área suficiente para deitar de braços abertos, providencie um tapete antiderrapante, vista roupa confortável e conecte-se a uma aula com professor ao vivo. Evitar começar sozinha com vídeos gravados — sem correção de postura em tempo real, é fácil criar hábitos errados que causam dor em vez de alívio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quantas vezes por semana devo fazer yoga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para resultados perceptíveis no sono, na ansiedade e na flexibilidade: duas a três vezes por semana é suficiente para começar. Para quem quer progressão mais rápida em força e mobilidade: quatro vezes ou mais. Praticar uma vez por semana mantém o contato com a prática, mas raramente produz mudanças estruturais no sistema nervoso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer yoga todos os dias?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, é possível e benéfico praticar yoga diariamente — com uma condição: variar a intensidade. Dias de prática ativa (Vinyasa, Hatha intenso) devem alternar com dias de prática regenerativa (Yoga Restaurativo, Yoga Nidra, respiração). O erro é manter a mesma intensidade todos os dias, sem deixar o sistema nervoso e o tecido conjuntivo recuperarem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual o melhor horário para fazer yoga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não existe um horário universalmente melhor — existe o horário que você consegue manter. Dito isso: yoga pela manhã tende a energizar e estabelecer o tom mental do dia. Yoga à tarde ou à noite tende a desacelerar, reduzir a tensão acumulada e preparar o sistema nervoso para o sono. O pior horário é aquele que você nunca consegue respeitar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto tempo de yoga por dia é necessário para sentir resultado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sessões de 45 a 60 minutos, duas a três vezes por semana, produzem resultados perceptíveis em duas a quatro semanas — especialmente em qualidade do sono, nível de ansiedade e mobilidade. Os primeiros resultados costumam aparecer antes de qualquer mudança visível no corpo: a cabeça muda antes dos músculos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que preciso para começar a fazer yoga em casa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para começar: um tapete de yoga antiderrapante (6mm de espessura é suficiente), roupa confortável que permita movimento, um espaço de aproximadamente 2m x 1m e conexão à internet para aulas ao vivo. Blocos de yoga e cintos são úteis mas não obrigatórios no início — uma professora experiente adapta as posturas ao que você tem em casa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga ajuda na ansiedade? Existe prova científica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, e a evidência é robusta. Estudos publicados em periódicos como o Journal of Clinical Psychiatry e o Frontiers in Psychiatry documentam redução significativa de sintomas de ansiedade em praticantes regulares de yoga. O mecanismo é fisiológico: técnicas de respiração ativam o nervo vago, reduzem o cortisol e desaceleram o sistema nervoso autônomo — efeitos mensuráveis em uma única sessão."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga melhora a insônia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. O yoga melhora o sono por dois caminhos complementares: regula os picos de cortisol ao longo do dia e, nas horas antes de dormir, ativa o sistema nervoso parassimpático. Um estudo publicado na Revista Brasileira de Medicina de Família e Comunidade documentou melhora significativa da insônia em mulheres na pós-menopausa com prática regular de yoga. A maioria das praticantes relata melhora perceptível nas primeiras duas semanas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga é bom para a coluna?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim — quando praticado com orientação adequada. O yoga atua na dor lombar crônica por múltiplos caminhos: fortalece a musculatura profunda do core, melhora a mobilidade dos quadris e isquiotibiais (que quando encurtados aumentam a pressão lombar) e corrige padrões posturais inadequados. Atenção: fazer yoga sem professor para condições de coluna pode piorar em vez de melhorar — a presença de quem vê e adapta é fundamental."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga pode adiar o envelhecimento do cérebro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evidências preliminares sugerem que sim. Estudos de neuroimagem publicados no Journal of Alzheimer's Disease e na Frontiers in Aging Neuroscience identificaram maior volume de matéria cinzenta em regiões associadas à memória e ao processamento emocional em praticantes de longa data de yoga e meditação, comparados a não praticantes da mesma faixa etária. A prática regular parece ter efeito neuroprotetor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que acontece com o corpo quando você faz yoga regularmente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Com a prática regular, o corpo passa por mudanças progressivas: melhora da qualidade do sono (semanas 1 a 2), redução dos níveis basais de ansiedade (semanas 2 a 6), aumento de flexibilidade e força muscular (semanas 4 a 12), melhora postural (meses 2 a 4) e, em muitos casos, redução de dores crônicas e melhora da composição corporal (meses 3 em diante). O sistema nervoso muda antes do corpo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga pode fazer mal se praticado errado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Yoga praticado sem orientação adequada pode causar lesões — especialmente na coluna, joelhos e ombros. Os erros mais comuns são: forçar posturas além do limite atual do corpo, substituir a respiração pelo esforço muscular e copiar posturas de vídeos sem adaptar ao próprio corpo. A presença de uma professora que vê e corrige em tempo real é a principal proteção contra esses riscos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga para burnout: por onde começar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para quem está em burnout, o ponto de entrada é o yoga mais suave disponível: Yoga Restaurativo ou Yoga Nidra. Adicionar intensidade a um sistema nervoso esgotado é contraproducente. O objetivo das primeiras semanas não é \"fazer mais\" — é ensinar o sistema nervoso que é seguro parar. Isso, por si só, já é o trabalho mais importante."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga pode ser usado como terapia complementar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, e crescentemente é prescrito como tal. Organizações como a American Psychological Association e o National Institutes of Health reconhecem o yoga como terapia complementar eficaz para ansiedade, depressão leve a moderada, dor crônica, insônia e TEPT. No Brasil, o Ministério da Saúde incluiu práticas integrativas — entre elas o yoga — no SUS em 2017."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga para menopausa: alivia os calores e outros sintomas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Estudos clínicos documentam redução significativa da frequência e intensidade das ondas de calor em mulheres que praticam yoga regularmente — particularmente técnicas de respiração que ativam o sistema nervoso parassimpático. O yoga também demonstra eficácia para os outros sintomas da menopausa: insônia, oscilações de humor, rigidez articular e ansiedade elevada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "É tarde para começar yoga aos 40, 50 ou 60 anos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. O yoga é uma das práticas com menor barreira de entrada para adultos mais velhos. Não há limite de idade para começar, e os benefícios são proporcionalmente maiores para quem começa depois dos 40 — porque é exatamente nessa fase que os principais problemas que o yoga resolve se instalam: insônia, ansiedade, dores articulares, rigidez, esgotamento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga para TPM funciona mesmo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Posturas específicas de yoga aliviam cólicas, reduzem a retenção de líquido, estabilizam o humor e diminuem a irritabilidade associada à TPM. O mecanismo inclui estímulo ao sistema linfático, regulação do cortisol e ativação do nervo vago — que contrabalança o estado de hiperativação do sistema nervoso que a queda hormonal pré-menstrual provoca."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é yoga hormonal e para quem é indicado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yoga hormonal é uma prática desenvolvida pela terapeuta brasileira Dinah Rodrigues que combina posturas de yoga, respiração e técnicas de energização com o objetivo de estimular o sistema endócrino feminino. É indicado principalmente para mulheres na perimenopausa e menopausa que buscam aliviar sintomas hormonais de forma complementar. Requer acompanhamento de professora especializada na abordagem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer yoga durante a menstruação?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, com adaptações. A prática de yoga durante a menstruação é segura e pode aliviar desconforto — mas deve ser mais suave do que o habitual. A maioria das tradições de yoga recomenda evitar inversões intensas (como parada de cabeça e ombros) durante o fluxo mais intenso. Posturas restaurativas, flexões suaves para frente e respiração abdominal são especialmente benéficas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga pode ajudar com ganho de peso da menopausa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O yoga contribui para o controle do peso na menopausa por três caminhos: reduz o cortisol cronicamente elevado (que favorece o acúmulo de gordura abdominal), melhora a qualidade do sono (que regula os hormônios da fome) e desenvolve consciência corporal que tende a se transferir para escolhas alimentares mais cuidadosas. Não é uma solução isolada, mas é um componente relevante."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual tipo de yoga é melhor para iniciantes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para a maioria dos adultos que começam do zero, Hatha Yoga é o ponto de entrada mais recomendado: ritmo pausado, posturas mantidas por alguns respirações, espaço para aprender o alinhamento com segurança. Yoga Restaurativo é a segunda opção, especialmente para quem está esgotada ou com dor crônica. Vinyasa é mais adequado para quem já tem alguma base ou vem de prática física regular."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é yoga nidra e como fazer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yoga Nidra é uma prática de relaxamento guiado feita completamente deitada. O praticante é conduzido por voz através de camadas progressivas de consciência corporal, chegando a um estado entre vigília e sono onde o sistema nervoso se restaura profundamente. Uma sessão de 30 minutos é frequentemente descrita como equivalente a 2 a 3 horas de sono em termos de recuperação do sistema nervoso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é yin yoga e como é diferente dos outros estilos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yin Yoga é uma prática lenta onde cada postura é mantida por 3 a 10 minutos com o corpo relaxado. O alvo não são os músculos — são os tecidos conjuntivos profundos: fáscia, ligamentos e cápsulas articulares. É o único estilo de yoga que trabalha diretamente esse tecido, que não responde ao esforço muscular mas cede sob pressão suave e duradoura."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é neuroyoga e para quem é indicado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Neuroyoga é uma abordagem emergente que integra conhecimentos de neurociência à prática do yoga. Em vez de descrever os efeitos apenas pela tradição, o neuroyoga explica o mecanismo — como o cérebro responde ao movimento, à respiração e à atenção — e usa esse mapa para conduzir práticas mais precisas. É indicado especialmente para quem tem ansiedade, burnout ou dificuldade de conexão com práticas mais tradicionais."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a diferença entre Hatha e Vinyasa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hatha Yoga é pausado — cada postura é mantida por algumas respirações antes de mudar. Vinyasa é fluido — os movimentos fluem sincronizados com a respiração, criando uma sequência contínua. Hatha ensina o alinhamento e a permanência; Vinyasa ensina a fluidez e a presença no movimento. Para iniciantes, Hatha é geralmente mais seguro porque permite mais tempo de aprendizado em cada postura."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a diferença entre yoga e pilates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yoga e pilates trabalham o corpo de formas complementares mas com ênfases distintas. O pilates foca no fortalecimento do core e na estabilidade postural — é predominantemente físico. O yoga integra respiração, atenção mental e regulação do sistema nervoso além do corpo físico. Pilates é mais indicado para reabilitação e força; yoga, para regulação mental e mobilidade."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga pode substituir a musculação?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende do objetivo. Para desenvolvimento de força máxima e hipertrofia muscular intensa, não. Para manutenção de força funcional, controle de peso, saúde articular e equilíbrio muscular, o yoga pode ser suficiente — especialmente modalidades mais ativas como Vinyasa e Yoga HIIT. Para a maioria das pessoas, yoga e musculação se complementam melhor do que se substituem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer yoga e musculação no mesmo dia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, com planejamento. A recomendação geral é: yoga antes da musculação (como aquecimento e ativação) ou yoga algumas horas depois (como recuperação). Evitar yoga intenso imediatamente após musculação pesada, porque o tecido muscular fatigado não responde bem a alongamento forçado. Yoga Restaurativo ou Yoga Nidra após musculação, porém, acelera a recuperação."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga é considerado cardio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende da modalidade. Vinyasa e Yoga HIIT elevam a frequência cardíaca a zonas de exercício moderado (55 a 70% da frequência máxima) — equivalente a uma caminhada acelerada. Hatha e Restaurativo têm baixo componente cardiovascular. Para os benefícios específicos do exercício aeróbico intenso, o yoga convencional não substitui a corrida ou o ciclismo — mas complementa com o que esses exercícios não oferecem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga é religião?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. Yoga tem origens filosóficas nas tradições indianas, mas praticar yoga não exige nenhuma crença religiosa, filiação espiritual ou mudança de cosmovisão. Os benefícios físicos e mentais — redução de ansiedade, melhora do sono, alívio de dores — são disponíveis para qualquer pessoa, independentemente do que acredita. A respiração ativa o nervo vago da mesma forma em ateus e em pessoas de qualquer fé."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cristãos podem praticar yoga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Do ponto de vista da prática laica, sim. Uma aula de yoga que se restringe ao trabalho físico, à respiração e à regulação do sistema nervoso não entra em conflito com nenhum princípio cristão. A questão relevante é o conteúdo da aula: posturas e respiração não têm afiliação religiosa; mantras, invocações e rituais espirituais específicos podem ser incompatíveis com algumas tradições."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é yoga secular?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yoga secular é a prática de yoga focada exclusivamente em seus benefícios físicos e mentais, sem qualquer componente espiritual, filosófico ou ritual. Não há mantras, não há referências a divindades, não há afirmações de fé. O vocabulário é de neurofisiologia e anatomia, não de tradição. É o formato mais adequado para pessoas que querem os benefícios do yoga sem o pacote espiritual."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga online ao vivo funciona tanto quanto o presencial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para a maioria das pessoas, sim — desde que seja ao vivo com professor que vê os alunos, não aula gravada. A diferença fundamental entre yoga online ao vivo e presencial é apenas o toque físico do professor. A correção verbal e visual, a presença, a adaptação em tempo real e a relação com a professora se mantêm integralmente online. O que não se mantém é o ajuste manual de postura — que muitas tradições de yoga nem utilizam."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que preciso para fazer yoga online ao vivo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para participar de uma aula de yoga online ao vivo você precisa: tapete de yoga, espaço de aproximadamente 2m x 1m, roupa confortável, conexão à internet estável e câmera funcionando (para que a professora veja você). A câmera ligada é importante: é através dela que a professora faz as correções de postura em tempo real. Sem câmera, a aula se torna equivalente a um vídeo gravado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A professora consegue corrigir minha postura em uma aula online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, com precisão surpreendente. A correção verbal guiada visualmente — \"afaste o joelho direito 2 centímetros, sinta o peso distribuir no calcanhar\" — é tão eficaz quanto o ajuste manual para a maioria das posturas. A professora vê o alinhamento, identifica as compensações e guia a correção em tempo real. Isso é fundamentalmente diferente de uma aula gravada, onde a professora fala para uma câmera sem ver ninguém."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como escolher uma professora de yoga online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Os critérios mais importantes: formação certificada por escola reconhecida (mínimo 200 horas), experiência de ensino comprovada, especialização na modalidade que você busca e — principalmente — a sensação de estar à vontade na presença dela. Nenhum certificado substitui a experiência de fazer uma aula experimental e verificar se o estilo de ensino faz sentido para você."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual aplicativo ou plataforma usar para aulas de yoga online ao vivo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A plataforma mais usada para aulas de yoga online ao vivo no Brasil é o Zoom. A experiência com o Zoom é superior a outras plataformas para esse formato porque oferece boa qualidade de vídeo e áudio, permite à professora ver todos os alunos simultaneamente e tem estabilidade comprovada para sessões de 60 a 90 minutos. Google Meet e Teams funcionam mas têm limitações de qualidade de vídeo em grupos maiores."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Aulas ao vivo são melhores do que vídeos gravados de yoga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para aprendizado e segurança, sim — especialmente para iniciantes. Vídeos gravados são úteis para complementar a prática, revisar posturas ou praticar quando não há aula ao vivo disponível. Mas não substituem a presença de um professor que vê você: sem correção em tempo real, é fácil desenvolver hábitos posturais incorretos sem perceber. A aula ao vivo é proteção — não luxo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer yoga na gravidez?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, com acompanhamento qualificado. Yoga na gravidez é seguro e benéfico para a maioria das mulheres — reduz dores lombares, alivia edema, melhora a qualidade do sono e prepara o corpo e a respiração para o parto. A condição essencial é informar à professora sobre a gravidez, semana gestacional e qualquer restrição médica, e praticar exclusivamente sob orientação de professora com formação específica em yoga para gestantes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer yoga com dor na lombar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende da origem e intensidade da dor. Para dor lombar crônica sem diagnóstico de hérnia discal aguda ou instabilidade vertebral: yoga é frequentemente recomendado como parte do tratamento — fortalece o core, melhora a mobilidade dos quadris e corrige padrões posturais que sobrecarregam a lombar. Para dor aguda ou com diagnóstico específico: consultar o médico antes de começar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer yoga antes de dormir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim — e é uma das aplicações mais eficazes do yoga. Uma prática de 20 a 45 minutos entre 1 e 2 horas antes de dormir, focada em posturas suaves, respiração longa e finalizada com Savasana ou Yoga Nidra, produz redução mensurável nos níveis de cortisol e prepara o sistema nervoso para o sono. Evitar Vinyasa intenso ou Yoga HIIT próximo ao horário de dormir — esses estilos energizam em vez de desacelerar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer yoga depois de comer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O ideal é aguardar pelo menos 2 horas após uma refeição grande e 1 hora após uma refeição leve antes de praticar yoga. Posturas de torção, inversões e flexões abdominais são desconfortáveis e potencialmente prejudiciais com o estômago cheio. Yoga Nidra e meditação são exceções — podem ser feitos com menos intervalo porque não envolvem compressão abdominal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer yoga na cadeira?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Yoga na cadeira — também chamado de Chair Yoga — é uma modalidade adaptada para pessoas com mobilidade reduzida, condições ortopédicas que limitam posturas no chão, ou que passam muito tempo sentadas. Mantém os benefícios essenciais do yoga: respiração consciente, mobilidade articular, atenção ao corpo e regulação do sistema nervoso — sem exigir que o praticante sente ou deite no tapete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer yoga gripada ou resfriada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende da intensidade dos sintomas. Sintomas leves — leve congestão, cansaço moderado — admitem uma prática suave: Hatha devagar, Yoga Restaurativo ou Yoga Nidra. Febre, sintomas intensos ou gripe declarada pedem repouso total. O sistema imune em resposta ativa precisa de energia — qualquer prática física a desvia para o músculo em vez de para a defesa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga emagrece?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yoga contribui para o controle de peso, mas não é primariamente uma prática de emagrecimento. O mecanismo não é principalmente o gasto calórico (uma aula de Hatha queima entre 150 e 300 calorias por hora): é a regulação do cortisol cronicamente elevado — que está diretamente associado ao acúmulo de gordura abdominal — e a melhora da qualidade do sono, que regula os hormônios da fome. A consciência corporal que o yoga desenvolve também tende a influenciar escolhas alimentares."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga define o corpo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, com prática regular e consistente. Modalidades ativas de yoga — Vinyasa, Hatha intenso, Yoga HIIT — desenvolvem força muscular funcional, melhoram o tônus e a postura. O resultado visual é um corpo mais alongado, mais sustentado e com melhor alinhamento. Não é o mesmo resultado da musculação com cargas — é uma definição diferente: mais funcional, mais integrada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Em quanto tempo o yoga produz resultados perceptíveis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Os primeiros resultados são rápidos: melhora do sono e redução de ansiedade costumam aparecer nas primeiras duas semanas de prática consistente. Flexibilidade e redução de dores crônicas aparecem entre 4 e 8 semanas. Mudanças de força, postura e composição corporal levam de 3 a 6 meses. A ordem importa: o sistema nervoso muda antes do corpo — e essa é frequentemente a mudança mais significativa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yoga melhora a postura?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim — e é uma das mudanças mais universalmente relatadas por praticantes regulares. O yoga fortalece a musculatura profunda da coluna e do core (que sustenta o alinhamento), aumenta a consciência do próprio corpo no espaço e libera as tensões musculares crônicas que tracionam a coluna para fora do eixo. Mudanças posturais perceptíveis costumam aparecer entre 6 e 12 semanas de prática regular."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O yoga tem contraindicações?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yoga tem poucas contraindicações absolutas, mas exige adaptações em algumas condições. Requerem atenção especial: glaucoma (inversões contraindicadas), hérnia discal aguda (posturas que comprimem a coluna adaptadas), gravidez de alto risco (acompanhamento médico antes de iniciar), hipertensão descontrolada (evitar inversões), e cirurgias recentes (aguardar liberação médica). Para todas essas condições, informe a professora antes da primeira aula."
+      }
+    }
+  ]
+}
+
   </script>
 </head>
 
@@ -1032,8 +1441,7 @@
         </div>
 
         <div class="faq-list fade-up" role="list" aria-label="Perguntas frequentes sobre yoga e aulas da Gi Borba">
-
-          <div class="faq-item" role="listitem" id="o-que-e-yoga">
+          <div class="faq-item" role="listitem" id="o-que-e-yoga-e-para-que-serve">
             <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-1" id="faq-q-1">
               O que é yoga e para que serve?
               <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1042,161 +1450,785 @@
               </svg>
             </button>
             <div class="faq-answer" id="faq-ans-1" role="region" aria-labelledby="faq-q-1">
-              <p><strong>Yoga é uma prática que combina posturas físicas, respiração consciente e atenção ao corpo.
-                  Serve para reduzir ansiedade, melhorar o sono, aliviar dores crônicas e recuperar a sensação de
-                  equilíbrio.</strong> Não é religião, não exige flexibilidade e não depende de nenhuma crença
-                espiritual — funciona por biologia, não por misticismo. Uma hora de yoga bem conduzida reduz a
-                frequência cardíaca, diminui a pressão arterial e alivia tensões musculares que você carregava sem
-                perceber.</p>
+              <p><strong>Yoga é uma prática que combina posturas físicas, respiração consciente e atenção ao corpo. Serve para reduzir ansiedade, melhorar o sono, aliviar dores crônicas e recuperar a sensação de equilíbrio. Não é religião, não exige flexibilidade e não depende de nenhuma crença espiritual — funciona por biologia, não por misticismo.</strong></p>
+              <p>Quando o sistema nervoso vive em estado crônico de alerta — o que acontece com a maioria das pessoas em rotinas de alta pressão — o corpo acumula tensão que nenhuma atividade convencional consegue desfazer por completo. O yoga atua diretamente nesse sistema: através da respiração controlada e do movimento consciente, ativa o sistema nervoso parassimpático e interrompe o ciclo de cortisol elevado.</p>
+              <p>Do ponto de vista prático: uma hora de yoga bem conduzida reduz a frequência cardíaca, diminui a pressão arterial, melhora a qualidade do sono naquela noite e alivia tensões musculares que a pessoa carregava sem perceber. Com a prática regular, esses efeitos se tornam cumulativos e estruturais.</p>
             </div>
           </div>
 
-          <div class="faq-item" role="listitem" id="yoga-sem-flexibilidade">
+          <div class="faq-item" role="listitem" id="yoga-e-ioga-qual-a-forma-correta-de-escrever">
             <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-2" id="faq-q-2">
-              Posso fazer yoga sem ser flexível?
+              Yoga e ioga: qual a forma correta de escrever?
               <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer" id="faq-ans-2" role="region" aria-labelledby="faq-q-2">
-              <p><strong>Sim. Flexibilidade não é pré-requisito para o yoga — é consequência.</strong> Quem começa sem
-                flexibilidade tem exatamente o yoga que precisa: adaptado ao corpo que tem hoje. Forçar além do que o
-                corpo oferece não acelera o processo — machuca. A flexibilidade que você ainda não tem é exatamente o
-                motivo para começar.</p>
+              <p><strong>As duas formas estão corretas em português brasileiro. "Ioga" é a grafia aportuguesada, adotada pelo Acordo Ortográfico de 1990. "Yoga" é a grafia original em sânscrito e a mais usada no Brasil em contexto cotidiano, profissional e nas buscas online. Ambas se referem à mesma prática.</strong></p>
+              <p>Na prática, "yoga" domina absolutamente o uso real — nas buscas do Google, nas redes sociais, nos estúdios e nas conversas. "Ioga" aparece principalmente em textos formais ou jornalísticos que seguem estritamente o acordo ortográfico. Para fins de comunicação e SEO, "yoga" é o termo a priorizar.</p>
             </div>
           </div>
 
-          <div class="faq-item" role="listitem" id="frequencia-yoga">
+          <div class="faq-item" role="listitem" id="o-que-significa-yoga-em-sanscrito">
             <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-3" id="faq-q-3">
-              Quantas vezes por semana devo fazer yoga?
+              O que significa yoga em sânscrito?
               <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer" id="faq-ans-3" role="region" aria-labelledby="faq-q-3">
-              <p><strong>Para resultados perceptíveis no sono, na ansiedade e na flexibilidade: duas a três vezes por
-                  semana é suficiente para começar.</strong> Para quem quer progressão mais rápida: quatro vezes ou
-                mais. A consistência importa mais do que a intensidade — três sessões por semana durante três meses
-                superam em muito sessões diárias durante três semanas.</p>
+              <p><strong>"Yoga" vem da raiz sânscrita "yuj", que significa unir, conectar, integrar. A tradução mais precisa é "união" — a integração entre corpo, mente e respiração. Não é uma tradução poética: é uma descrição literal do que a prática faz fisiologicamente — criar coerência entre sistemas que habitualmente operam em conflito.</strong></p>
+              <p>No contexto original, a "união" se referia à integração do indivíduo com o todo — um conceito filosófico profundo. Na prática contemporânea e laica, a mesma palavra descreve algo igualmente real: o estado de coerência interna que emerge quando corpo, respiração e atenção trabalham juntos em vez de em direções opostas.</p>
             </div>
           </div>
 
-          <div class="faq-item" role="listitem" id="yoga-ansiedade">
+          <div class="faq-item" role="listitem" id="onde-surgiu-o-yoga-e-qual-e-sua-origem">
             <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-4" id="faq-q-4">
-              Yoga ajuda na ansiedade? Existe prova científica?
+              Onde surgiu o yoga e qual é sua origem?
               <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer" id="faq-ans-4" role="region" aria-labelledby="faq-q-4">
-              <p><strong>Sim, e a evidência é robusta.</strong> Estudos publicados no Journal of Clinical Psychiatry
-                documentam redução significativa de sintomas de ansiedade em praticantes regulares. O mecanismo é
-                fisiológico: técnicas de respiração ativam o nervo vago, reduzem o cortisol e desaceleram o sistema
-                nervoso autônomo — efeitos mensuráveis em uma única sessão. A prática consistente recalibra o ponto de
-                equilíbrio do sistema nervoso.</p>
+              <p><strong>O yoga surgiu na Índia há mais de 5.000 anos, desenvolvido dentro das tradições filosóficas do subcontinente indiano. Os primeiros registros escritos aparecem nos Vedas, textos sagrados indianos. A sistematização da prática como a conhecemos hoje — com posturas, respiração e meditação integradas — foi compilada por Patañjali nos Yoga Sutras, por volta do ano 400 d.C.</strong></p>
+              <p>O yoga chegou ao Ocidente no final do século XIX e início do XX, e ao Brasil de forma mais estruturada na segunda metade do século XX. No Brasil, destaca-se a tradição SwáSthya, desenvolvida pelo mestre Caio Miranda, com raiz genuinamente brasileira. Hoje, o yoga praticado no mundo ocidental é majoritariamente focado nos aspectos físicos e de regulação mental — sem necessidade de adesão à filosofia original.</p>
             </div>
           </div>
 
-          <div class="faq-item" role="listitem" id="yoga-insonia">
+          <div class="faq-item" role="listitem" id="yoga-e-exercicio-fisico-ou-pratica-espiritual">
             <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-5" id="faq-q-5">
-              Yoga melhora a insônia?
+              Yoga é exercício físico ou prática espiritual?
               <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer" id="faq-ans-5" role="region" aria-labelledby="faq-q-5">
-              <p><strong>Sim. O yoga melhora o sono por dois caminhos complementares: regula os picos de cortisol ao
-                  longo do dia e, nas horas antes de dormir, ativa o sistema nervoso parassimpático.</strong> A maioria
-                das alunas nota diferença nas primeiras duas semanas. A insônia mais comum não é a incapacidade de
-                adormecer — é a incapacidade de desligar. O yoga oferece esse sinal ao sistema nervoso.</p>
+              <p><strong>Yoga é as duas coisas — e também pode ser nenhuma das duas. É uma prática que tem dimensão física (posturas, força, flexibilidade), dimensão mental (atenção, regulação do sistema nervoso) e, para quem escolher, dimensão filosófica ou espiritual. Cada praticante decide até onde quer ir. Os benefícios físicos e mentais estão disponíveis independentemente de qualquer escolha espiritual.</strong></p>
+              <p>Classificar yoga como "só exercício físico" seria reduzir. Classificar como "só prática espiritual" seria excluir. A realidade é que yoga é uma tecnologia de integração — entre corpo e mente, entre esforço e descanso, entre o que você faz e o que você sente. Essa integração produz benefícios fisiológicos documentados, independentemente da cosmologia de quem pratica.</p>
             </div>
           </div>
 
-          <div class="faq-item" role="listitem" id="yoga-coluna">
+          <div class="faq-item" role="listitem" id="yoga-conta-como-exercicio-fisico-segundo-a-oms">
             <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-6" id="faq-q-6">
-              Yoga é bom para a coluna?
+              Yoga conta como exercício físico segundo a OMS?
               <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer" id="faq-ans-6" role="region" aria-labelledby="faq-q-6">
-              <p><strong>Sim — quando praticado com orientação adequada.</strong> O yoga atua na dor lombar crônica por
-                múltiplos caminhos: fortalece a musculatura profunda do core, melhora a mobilidade dos quadris e
-                isquiotibiais e corrige padrões posturais inadequados. Atenção: fazer yoga sem professor para condições
-                de coluna pode piorar em vez de melhorar — a presença de quem vê e adapta é fundamental.</p>
+              <p><strong>Sim. A OMS classifica yoga como atividade física moderada a vigorosa, dependendo da modalidade. Modalidades ativas como Vinyasa e Yoga HIIT atingem frequência cardíaca comparável a uma caminhada acelerada ou corrida leve. Modalidades mais suaves como Hatha e Restaurativo promovem benefícios musculares, de flexibilidade e de regulação do sistema nervoso sem carga cardiovascular intensa.</strong></p>
+              <p>Para as recomendações globais de atividade física — 150 minutos de atividade moderada por semana — o yoga ao vivo com um professor qualificado conta integralmente. Isso é especialmente relevante para quem tem restrições articulares ou cardiovasculares que limitam outras formas de exercício.</p>
             </div>
           </div>
 
-          <div class="faq-item" role="listitem" id="yoga-50-anos">
+          <div class="faq-item" role="listitem" id="posso-fazer-yoga-sem-ser-flexivel">
             <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-7" id="faq-q-7">
-              É tarde para começar yoga aos 40, 50 ou 60 anos?
+              Posso fazer yoga sem ser flexível?
               <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer" id="faq-ans-7" role="region" aria-labelledby="faq-q-7">
-              <p><strong>Não. O yoga é uma das práticas com menor barreira de entrada para adultos mais velhos.</strong>
-                Os benefícios são proporcionalmente maiores para quem começa depois dos 40 — porque é exatamente nessa
-                fase que os principais problemas que o yoga resolve se instalam: insônia, ansiedade, dores articulares,
-                rigidez, esgotamento. As alunas que mais evoluem são, frequentemente, as que chegam depois dos 45.</p>
+              <p><strong>Sim. Flexibilidade não é pré-requisito para o yoga — é consequência. Quem começa sem flexibilidade tem exatamente o yoga que precisa: adaptado ao corpo que tem hoje. Forçar além do que o corpo oferece não acelera o processo — machuca. Com prática regular, o tecido conjuntivo cede gradualmente, e a abertura acontece de dentro para fora.</strong></p>
+              <p>A imagem do yoga nas redes sociais filtra, por natureza, o que é visualmente impressionante. Corpos rígidos fazendo o melhor que conseguem não rendem engajamento. Esse filtro cria a falsa ideia de que yoga é para quem já é flexível — quando na realidade é o oposto. A flexibilidade que você ainda não tem é exatamente o motivo para começar.</p>
+              <p>Anatomicamente: a rigidez corporal raramente é só muscular. É também uma resposta do sistema nervoso — o músculo recebeu a mensagem de "fique alerta". O yoga trabalha essa camada. Após algumas semanas de prática consistente, a maioria dos iniciantes percebe mudanças não porque o músculo cresceu, mas porque o sistema nervoso aprendeu que é seguro ceder.</p>
             </div>
           </div>
 
-          <div class="faq-item" role="listitem" id="yoga-online-vs-presencial">
+          <div class="faq-item" role="listitem" id="como-fazer-yoga-em-casa-para-iniciantes">
             <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-8" id="faq-q-8">
-              Yoga online ao vivo funciona tanto quanto o presencial?
+              Como fazer yoga em casa para iniciantes?
               <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer" id="faq-ans-8" role="region" aria-labelledby="faq-q-8">
-              <p><strong>Para a maioria das pessoas, sim — desde que seja ao vivo com professor que vê os alunos, não
-                  aula gravada.</strong> A correção verbal e visual, a presença, a adaptação em tempo real se mantêm
-                integralmente online. A única diferença é o toque físico do professor. A consistência que o online
-                propicia — sem deslocamento, sem trânsito — frequentemente supera o benefício marginal do presencial.
-              </p>
+              <p><strong>Para começar yoga em casa: escolha um espaço com área suficiente para deitar de braços abertos, providencie um tapete antiderrapante, vista roupa confortável e conecte-se a uma aula com professor ao vivo. Evitar começar sozinha com vídeos gravados — sem correção de postura em tempo real, é fácil criar hábitos errados que causam dor em vez de alívio.</strong></p>
+              <p>O erro mais comum de quem começa em casa é substituir o professor por uma biblioteca de vídeos. Vídeos gravados são úteis para complementar a prática, mas não veem você. Um professor ao vivo vê o alinhamento, percebe a compensação que você faz sem saber, e adapta a aula ao que seu corpo está fazendo naquele dia — não ao que o roteiro previu.</p>
+              <p>Para as primeiras semanas: comece com aulas de 45 a 60 minutos duas ou três vezes por semana. Não pule o descanso final (savasana). Não force posturas que causam dor aguda. E escolha um estilo acessível para iniciantes — Hatha ou Yoga Restaurativo são os pontos de entrada mais adequados para a maioria dos adultos.</p>
             </div>
           </div>
 
-          <div class="faq-item" role="listitem" id="correcao-postura-online">
+          <div class="faq-item" role="listitem" id="quantas-vezes-por-semana-devo-fazer-yoga">
             <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-9" id="faq-q-9">
-              A professora consegue corrigir minha postura em aula online?
+              Quantas vezes por semana devo fazer yoga?
               <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer" id="faq-ans-9" role="region" aria-labelledby="faq-q-9">
-              <p><strong>Sim, com precisão surpreendente.</strong> A correção verbal guiada visualmente — "afaste o
-                joelho direito, sinta o peso distribuir no calcanhar" — é tão eficaz quanto o ajuste manual para a
-                maioria das posturas. A professora vê o alinhamento, identifica as compensações e guia a correção em
-                tempo real. Isso é fundamentalmente diferente de uma aula gravada, onde a professora fala para uma
-                câmera sem ver ninguém.</p>
+              <p><strong>Para resultados perceptíveis no sono, na ansiedade e na flexibilidade: duas a três vezes por semana é suficiente para começar. Para quem quer progressão mais rápida em força e mobilidade: quatro vezes ou mais. Praticar uma vez por semana mantém o contato com a prática, mas raramente produz mudanças estruturais no sistema nervoso.</strong></p>
+              <p>A frequência ideal depende do objetivo. Para regulação do sistema nervoso e melhora do sono, a consistência importa mais do que a intensidade: duas sessões por semana durante dois meses superam em muito uma sessão por dia durante duas semanas. O corpo — e especialmente o sistema nervoso — responde a padrões repetidos, não a esforços isolados.</p>
             </div>
           </div>
 
-          <div class="faq-item" role="listitem" id="tempo-resultado-yoga">
+          <div class="faq-item" role="listitem" id="posso-fazer-yoga-todos-os-dias">
             <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-10" id="faq-q-10">
-              Em quanto tempo o yoga produz resultados perceptíveis?
+              Posso fazer yoga todos os dias?
               <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </button>
             <div class="faq-answer" id="faq-ans-10" role="region" aria-labelledby="faq-q-10">
-              <p><strong>Os primeiros resultados são rápidos: melhora do sono e redução de ansiedade costumam aparecer
-                  nas primeiras duas semanas.</strong> Flexibilidade e redução de dores crônicas aparecem entre 4 e 8
-                semanas. Mudanças de força, postura e composição corporal levam de 3 a 6 meses. A ordem importa: o
-                sistema nervoso muda antes do corpo — e essa é frequentemente a mudança mais significativa.</p>
+              <p><strong>Sim, é possível e benéfico praticar yoga diariamente — com uma condição: variar a intensidade. Dias de prática ativa (Vinyasa, Hatha intenso) devem alternar com dias de prática regenerativa (Yoga Restaurativo, Yoga Nidra, respiração). O erro é manter a mesma intensidade todos os dias, sem deixar o sistema nervoso e o tecido conjuntivo recuperarem.</strong></p>
+              <p>O corpo humano adulto saudável se adapta bem à prática diária de yoga quando a prática é inteligentemente variada. Culturas que praticam yoga diariamente há gerações sabem disso: a manhã começa com uma prática suave de ativação; sessões mais intensas ficam para momentos específicos da semana. Essa variação não é preguiça — é periodização.</p>
             </div>
           </div>
+
+          <div class="faq-item" role="listitem" id="qual-o-melhor-horario-para-fazer-yoga">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-11" id="faq-q-11">
+              Qual o melhor horário para fazer yoga?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-11" role="region" aria-labelledby="faq-q-11">
+              <p><strong>Não existe um horário universalmente melhor — existe o horário que você consegue manter. Dito isso: yoga pela manhã tende a energizar e estabelecer o tom mental do dia. Yoga à tarde ou à noite tende a desacelerar, reduzir a tensão acumulada e preparar o sistema nervoso para o sono. O pior horário é aquele que você nunca consegue respeitar.</strong></p>
+              <p>Para quem tem dificuldade de dormir: uma aula de Hatha, Restaurativo ou Yoga Nidra entre 18h e 21h produz redução mensurável nos níveis de cortisol antes de dormir. Para quem quer energia e foco pela manhã: uma prática de 30 a 45 minutos antes do café cria um estado de alerta calmo que a cafeína sozinha não consegue replicar.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="quanto-tempo-de-yoga-por-dia-e-necessario-para-sentir-resultado">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-12" id="faq-q-12">
+              Quanto tempo de yoga por dia é necessário para sentir resultado?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-12" role="region" aria-labelledby="faq-q-12">
+              <p><strong>Sessões de 45 a 60 minutos, duas a três vezes por semana, produzem resultados perceptíveis em duas a quatro semanas — especialmente em qualidade do sono, nível de ansiedade e mobilidade. Os primeiros resultados costumam aparecer antes de qualquer mudança visível no corpo: a cabeça muda antes dos músculos.</strong></p>
+              <p>A ordem de aparecimento dos resultados é previsível: primeiro vem a melhora do sono (semanas 1 a 2). Depois a redução da ansiedade e do nível basal de tensão muscular (semanas 2 a 6). Depois as mudanças de flexibilidade e força (semanas 4 a 12). As mudanças de composição corporal são as últimas a aparecer e as mais dependentes de outros fatores como alimentação e consistência.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="o-que-preciso-para-comecar-a-fazer-yoga-em-casa">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-13" id="faq-q-13">
+              O que preciso para começar a fazer yoga em casa?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-13" role="region" aria-labelledby="faq-q-13">
+              <p><strong>Para começar: um tapete de yoga antiderrapante (6mm de espessura é suficiente), roupa confortável que permita movimento, um espaço de aproximadamente 2m x 1m e conexão à internet para aulas ao vivo. Blocos de yoga e cintos são úteis mas não obrigatórios no início — uma professora experiente adapta as posturas ao que você tem em casa.</strong></p>
+              <p>O investimento inicial é mínimo. O tapete é o único equipamento verdadeiramente necessário, e um bom tapete de entrada custa entre R$80 e R$150. O que determina o resultado não é o equipamento — é a consistência da prática e a qualidade do acompanhamento. Uma aula ao vivo com correção de postura em tempo real vale mais do que qualquer acessório.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-ajuda-na-ansiedade-existe-prova-cientifica">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-14" id="faq-q-14">
+              Yoga ajuda na ansiedade? Existe prova científica?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-14" role="region" aria-labelledby="faq-q-14">
+              <p><strong>Sim, e a evidência é robusta. Estudos publicados em periódicos como o Journal of Clinical Psychiatry e o Frontiers in Psychiatry documentam redução significativa de sintomas de ansiedade em praticantes regulares de yoga. O mecanismo é fisiológico: técnicas de respiração ativam o nervo vago, reduzem o cortisol e desaceleram o sistema nervoso autônomo — efeitos mensuráveis em uma única sessão.</strong></p>
+              <p>A diferença entre "fazer yoga uma vez" e "praticar yoga regularmente" é a diferença entre apagar um incêndio e instalar um sistema de prevenção. Uma sessão reduz a ansiedade momentaneamente. A prática consistente recalibra o ponto de equilíbrio do sistema nervoso — o estado que antes exigia esforço começa a ser o estado padrão.</p>
+              <p>Para quem vive em estado crônico de alerta — prazos, responsabilidades que nunca terminam, a sensação de que o corpo nunca desliga — o yoga oferece uma via de saída que não depende de força de vontade: você não precisa "querer relaxar". O sistema nervoso responde ao estímulo da respiração independentemente da intenção consciente.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-melhora-a-insonia">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-15" id="faq-q-15">
+              Yoga melhora a insônia?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-15" role="region" aria-labelledby="faq-q-15">
+              <p><strong>Sim. O yoga melhora o sono por dois caminhos complementares: regula os picos de cortisol ao longo do dia e, nas horas antes de dormir, ativa o sistema nervoso parassimpático. Um estudo publicado na Revista Brasileira de Medicina de Família e Comunidade documentou melhora significativa da insônia em mulheres na pós-menopausa com prática regular de yoga. A maioria das praticantes relata melhora perceptível nas primeiras duas semanas.</strong></p>
+              <p>A insônia mais comum não é a incapacidade de adormecer — é a incapacidade de desligar. A mente continua processando o dia depois que o corpo deitou. Isso acontece porque o sistema nervoso nunca recebeu o sinal claro de que o dia terminou. O yoga oferece esse sinal: posturas suaves, respiração longa e o descanso final da aula preparam o sistema nervoso para o descanso de forma que a maioria das outras práticas não consegue.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-e-bom-para-a-coluna">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-16" id="faq-q-16">
+              Yoga é bom para a coluna?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-16" role="region" aria-labelledby="faq-q-16">
+              <p><strong>Sim — quando praticado com orientação adequada. O yoga atua na dor lombar crônica por múltiplos caminhos: fortalece a musculatura profunda do core, melhora a mobilidade dos quadris e isquiotibiais (que quando encurtados aumentam a pressão lombar) e corrige padrões posturais inadequados. Atenção: fazer yoga sem professor para condições de coluna pode piorar em vez de melhorar — a presença de quem vê e adapta é fundamental.</strong></p>
+              <p>A dor lombar crônica raramente tem uma causa única. É quase sempre uma combinação de músculos enfraquecidos que sobrecarregam as vértebras, tecidos encurtados que distorcem o alinhamento e padrões de movimento inadequados aprendidos ao longo de anos. O yoga endereça todas essas camadas simultaneamente — o que nenhum exercício isolado consegue.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-pode-adiar-o-envelhecimento-do-cerebro">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-17" id="faq-q-17">
+              Yoga pode adiar o envelhecimento do cérebro?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-17" role="region" aria-labelledby="faq-q-17">
+              <p><strong>Evidências preliminares sugerem que sim. Estudos de neuroimagem publicados no Journal of Alzheimer's Disease e na Frontiers in Aging Neuroscience identificaram maior volume de matéria cinzenta em regiões associadas à memória e ao processamento emocional em praticantes de longa data de yoga e meditação, comparados a não praticantes da mesma faixa etária. A prática regular parece ter efeito neuroprotetor.</strong></p>
+              <p>O mecanismo proposto envolve a redução crônica do cortisol — que em níveis elevados é neurotóxico para o hipocampo, região crítica para a memória. Ao reduzir o estado de alerta crônico, o yoga protege estruturas cerebrais que o estresse degrada ao longo do tempo. Não é uma cura para o envelhecimento, mas é uma das ferramentas com melhor custo-benefício para preservar a saúde cognitiva.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="o-que-acontece-com-o-corpo-quando-voce-faz-yoga-regularmente">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-18" id="faq-q-18">
+              O que acontece com o corpo quando você faz yoga regularmente?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-18" role="region" aria-labelledby="faq-q-18">
+              <p><strong>Com a prática regular, o corpo passa por mudanças progressivas: melhora da qualidade do sono (semanas 1 a 2), redução dos níveis basais de ansiedade (semanas 2 a 6), aumento de flexibilidade e força muscular (semanas 4 a 12), melhora postural (meses 2 a 4) e, em muitos casos, redução de dores crônicas e melhora da composição corporal (meses 3 em diante). O sistema nervoso muda antes do corpo.</strong></p>
+              <p>O que a maioria das pessoas não espera: as mudanças mais profundas não são visíveis no espelho. São a sensação de acordar menos tensa, a respiração que ficou mais funda sem que você precisasse lembrar de respirar, a capacidade de notar quando está se sobrecarregando antes que o corpo entre em colapso. Essas mudanças chegam primeiro — e são as que ficam.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-pode-fazer-mal-se-praticado-errado">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-19" id="faq-q-19">
+              Yoga pode fazer mal se praticado errado?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-19" role="region" aria-labelledby="faq-q-19">
+              <p><strong>Sim. Yoga praticado sem orientação adequada pode causar lesões — especialmente na coluna, joelhos e ombros. Os erros mais comuns são: forçar posturas além do limite atual do corpo, substituir a respiração pelo esforço muscular e copiar posturas de vídeos sem adaptar ao próprio corpo. A presença de uma professora que vê e corrige em tempo real é a principal proteção contra esses riscos.</strong></p>
+              <p>A maioria das lesões no yoga não ocorre em posturas avançadas — ocorre em posturas aparentemente simples, feitas com alinhamento incorreto de forma repetida. Um joelho que cede para dentro em postura de pé por semanas produz o mesmo dano que uma lesão aguda. Por isso, começar com professor ao vivo — e não com vídeos — é uma decisão de segurança, não de conforto.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-para-burnout-por-onde-comecar">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-20" id="faq-q-20">
+              Yoga para burnout: por onde começar?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-20" role="region" aria-labelledby="faq-q-20">
+              <p><strong>Para quem está em burnout, o ponto de entrada é o yoga mais suave disponível: Yoga Restaurativo ou Yoga Nidra. Adicionar intensidade a um sistema nervoso esgotado é contraproducente. O objetivo das primeiras semanas não é "fazer mais" — é ensinar o sistema nervoso que é seguro parar. Isso, por si só, já é o trabalho mais importante.</strong></p>
+              <p>O paradoxo do burnout é que quem mais precisa descansar é quem mais resiste a descansar. A mente esgotada continua gerando tarefas, justificativas e culpa mesmo quando o corpo já não aguenta. O Yoga Restaurativo funciona exatamente nesse contexto porque não pede esforço — pede rendição. E a rendição, praticada de forma estruturada e segura no tapete, começa a se transferir para a vida fora dele.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-pode-ser-usado-como-terapia-complementar">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-21" id="faq-q-21">
+              Yoga pode ser usado como terapia complementar?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-21" role="region" aria-labelledby="faq-q-21">
+              <p><strong>Sim, e crescentemente é prescrito como tal. Organizações como a American Psychological Association e o National Institutes of Health reconhecem o yoga como terapia complementar eficaz para ansiedade, depressão leve a moderada, dor crônica, insônia e TEPT. No Brasil, o Ministério da Saúde incluiu práticas integrativas — entre elas o yoga — no SUS em 2017.</strong></p>
+              <p>Terapia complementar significa que o yoga age ao lado de tratamentos convencionais, não no lugar deles. Para quem está em acompanhamento psicológico ou psiquiátrico: o yoga complementa, não substitui. O que ele oferece que a terapia falada não oferece é o acesso ao corpo — à tensão que o sistema nervoso carrega de forma não-verbal e que a conversa sozinha raramente alcança.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-para-menopausa-alivia-os-calores-e-outros-sintomas">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-22" id="faq-q-22">
+              Yoga para menopausa: alivia os calores e outros sintomas?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-22" role="region" aria-labelledby="faq-q-22">
+              <p><strong>Sim. Estudos clínicos documentam redução significativa da frequência e intensidade das ondas de calor em mulheres que praticam yoga regularmente — particularmente técnicas de respiração que ativam o sistema nervoso parassimpático. O yoga também demonstra eficácia para os outros sintomas da menopausa: insônia, oscilações de humor, rigidez articular e ansiedade elevada.</strong></p>
+              <p>O mecanismo não é hormonal — o yoga não repõe estrogênio. Mas atua diretamente nos sistemas que o estrogênio regulava: o sistema nervoso autônomo (que controla a temperatura corporal), o sistema límbico (que processa emoções) e o sistema musculoesquelético (que sofre com a perda de elasticidade). Abordar esses sistemas por fora — via respiração, movimento e atenção — produz alívio real e mensurável.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="e-tarde-para-comecar-yoga-aos-40-50-ou-60-anos">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-23" id="faq-q-23">
+              É tarde para começar yoga aos 40, 50 ou 60 anos?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-23" role="region" aria-labelledby="faq-q-23">
+              <p><strong>Não. O yoga é uma das práticas com menor barreira de entrada para adultos mais velhos. Não há limite de idade para começar, e os benefícios são proporcionalmente maiores para quem começa depois dos 40 — porque é exatamente nessa fase que os principais problemas que o yoga resolve se instalam: insônia, ansiedade, dores articulares, rigidez, esgotamento.</strong></p>
+              <p>O corpo de uma mulher de 50 anos que nunca praticou yoga não está "atrasado" — está no ponto de partida. E esse ponto de partida tem vantagens que os 20 anos não tinham: consciência corporal acumulada, motivação real em vez de estética, e disponibilidade para uma prática que exige presença em vez de velocidade. As alunas que mais evoluem são, frequentemente, as que chegam depois dos 45.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-para-tpm-funciona-mesmo">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-24" id="faq-q-24">
+              Yoga para TPM funciona mesmo?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-24" role="region" aria-labelledby="faq-q-24">
+              <p><strong>Sim. Posturas específicas de yoga aliviam cólicas, reduzem a retenção de líquido, estabilizam o humor e diminuem a irritabilidade associada à TPM. O mecanismo inclui estímulo ao sistema linfático, regulação do cortisol e ativação do nervo vago — que contrabalança o estado de hiperativação do sistema nervoso que a queda hormonal pré-menstrual provoca.</strong></p>
+              <p>A prática durante a fase pré-menstrual deve ser mais suave do que o habitual: posturas restaurativas, flexões para frente suaves e respirações longas funcionam melhor do que fluxos dinâmicos. Durante a menstruação, a maioria das professoras recomenda evitar inversões intensas — mas manter a prática suave é benéfico, não contraindicado.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="o-que-e-yoga-hormonal-e-para-quem-e-indicado">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-25" id="faq-q-25">
+              O que é yoga hormonal e para quem é indicado?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-25" role="region" aria-labelledby="faq-q-25">
+              <p><strong>Yoga hormonal é uma prática desenvolvida pela terapeuta brasileira Dinah Rodrigues que combina posturas de yoga, respiração e técnicas de energização com o objetivo de estimular o sistema endócrino feminino. É indicado principalmente para mulheres na perimenopausa e menopausa que buscam aliviar sintomas hormonais de forma complementar. Requer acompanhamento de professora especializada na abordagem.</strong></p>
+              <p>Diferente do yoga convencional, o yoga hormonal tem uma sequência específica e não substituível — as posturas foram escolhidas por seu efeito sobre glândulas específicas. Por isso, é uma das modalidades em que a qualificação da professora é especialmente crítica: não é qualquer aula de yoga que produz os efeitos da abordagem original.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="posso-fazer-yoga-durante-a-menstruacao">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-26" id="faq-q-26">
+              Posso fazer yoga durante a menstruação?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-26" role="region" aria-labelledby="faq-q-26">
+              <p><strong>Sim, com adaptações. A prática de yoga durante a menstruação é segura e pode aliviar desconforto — mas deve ser mais suave do que o habitual. A maioria das tradições de yoga recomenda evitar inversões intensas (como parada de cabeça e ombros) durante o fluxo mais intenso. Posturas restaurativas, flexões suaves para frente e respiração abdominal são especialmente benéficas.</strong></p>
+              <p>O corpo durante a menstruação está em fase de descida e renovação — não de ascensão e esforço. Adaptar a prática a esse ritmo não é fraqueza, é inteligência corporal. Uma boa professora oferece variações para esse período sem que você precise pedir: ela conhece o ciclo e adapta a aula naturalmente.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-pode-ajudar-com-ganho-de-peso-da-menopausa">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-27" id="faq-q-27">
+              Yoga pode ajudar com ganho de peso da menopausa?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-27" role="region" aria-labelledby="faq-q-27">
+              <p><strong>O yoga contribui para o controle do peso na menopausa por três caminhos: reduz o cortisol cronicamente elevado (que favorece o acúmulo de gordura abdominal), melhora a qualidade do sono (que regula os hormônios da fome) e desenvolve consciência corporal que tende a se transferir para escolhas alimentares mais cuidadosas. Não é uma solução isolada, mas é um componente relevante.</strong></p>
+              <p>A redistribuição de gordura que ocorre na menopausa — especialmente o aumento da circunferência abdominal — está diretamente relacionada ao aumento do cortisol e à piora do sono. O yoga endereça ambos simultaneamente. Combinado com acompanhamento nutricional adequado, a prática regular produz diferença mensurável na composição corporal ao longo de 3 a 6 meses.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="qual-tipo-de-yoga-e-melhor-para-iniciantes">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-28" id="faq-q-28">
+              Qual tipo de yoga é melhor para iniciantes?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-28" role="region" aria-labelledby="faq-q-28">
+              <p><strong>Para a maioria dos adultos que começam do zero, Hatha Yoga é o ponto de entrada mais recomendado: ritmo pausado, posturas mantidas por alguns respirações, espaço para aprender o alinhamento com segurança. Yoga Restaurativo é a segunda opção, especialmente para quem está esgotada ou com dor crônica. Vinyasa é mais adequado para quem já tem alguma base ou vem de prática física regular.</strong></p>
+              <p>A escolha ideal depende do objetivo. Para quem quer aprender o básico sem pressa: Hatha. Para quem precisa de um reset do sistema nervoso: Restaurativo ou Yoga Nidra. Para quem se sente agitada demais para "ficar parada": Vinyasa, que ocupa a mente com o movimento. Para quem tem rigidez articular crônica: Yin Yoga, que trabalha o tecido conjuntivo profundo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="o-que-e-yoga-nidra-e-como-fazer">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-29" id="faq-q-29">
+              O que é yoga nidra e como fazer?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-29" role="region" aria-labelledby="faq-q-29">
+              <p><strong>Yoga Nidra é uma prática de relaxamento guiado feita completamente deitada. O praticante é conduzido por voz através de camadas progressivas de consciência corporal, chegando a um estado entre vigília e sono onde o sistema nervoso se restaura profundamente. Uma sessão de 30 minutos é frequentemente descrita como equivalente a 2 a 3 horas de sono em termos de recuperação do sistema nervoso.</strong></p>
+              <p>Para fazer: deite-se em posição confortável (de preferência em savasana, de costas, braços ligeiramente afastados do corpo), feche os olhos e siga a voz da professora. Não é necessário "conseguir não pensar" — pensamentos vêm e vão normalmente. O que muda é a relação com eles: você observa sem seguir. Isso é yoga nidra em prática.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="o-que-e-yin-yoga-e-como-e-diferente-dos-outros-estilos">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-30" id="faq-q-30">
+              O que é yin yoga e como é diferente dos outros estilos?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-30" role="region" aria-labelledby="faq-q-30">
+              <p><strong>Yin Yoga é uma prática lenta onde cada postura é mantida por 3 a 10 minutos com o corpo relaxado. O alvo não são os músculos — são os tecidos conjuntivos profundos: fáscia, ligamentos e cápsulas articulares. É o único estilo de yoga que trabalha diretamente esse tecido, que não responde ao esforço muscular mas cede sob pressão suave e duradoura.</strong></p>
+              <p>A diferença principal em relação ao Hatha e ao Vinyasa: nesses estilos, você ativa os músculos e trabalha contra a gravidade. No Yin, você relaxa completamente e usa a gravidade a seu favor. A sensação é intensa mas diferente da musculatura: é uma pressão profunda e lenta nas articulações. Para quem tem rigidez articular crônica ou mobilidade reduzida, o Yin Yoga frequentemente produz mais resultado do que qualquer outro estilo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="o-que-e-neuroyoga-e-para-quem-e-indicado">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-31" id="faq-q-31">
+              O que é neuroyoga e para quem é indicado?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-31" role="region" aria-labelledby="faq-q-31">
+              <p><strong>Neuroyoga é uma abordagem emergente que integra conhecimentos de neurociência à prática do yoga. Em vez de descrever os efeitos apenas pela tradição, o neuroyoga explica o mecanismo — como o cérebro responde ao movimento, à respiração e à atenção — e usa esse mapa para conduzir práticas mais precisas. É indicado especialmente para quem tem ansiedade, burnout ou dificuldade de conexão com práticas mais tradicionais.</strong></p>
+              <p>O que distingue o neuroyoga é o vocabulário: em vez de "abra o coração para a gratidão", o professor diz "mantenha essa postura mais três respirações porque a tolerância ao desconforto se aprende exatamente assim". O efeito no corpo é idêntico — a via de entrada é diferente. Para quem desconfia do misticismo mas reconhece que o corpo precisa de atenção, é frequentemente a porta de entrada mais eficaz.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="qual-a-diferenca-entre-hatha-e-vinyasa">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-32" id="faq-q-32">
+              Qual a diferença entre Hatha e Vinyasa?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-32" role="region" aria-labelledby="faq-q-32">
+              <p><strong>Hatha Yoga é pausado — cada postura é mantida por algumas respirações antes de mudar. Vinyasa é fluido — os movimentos fluem sincronizados com a respiração, criando uma sequência contínua. Hatha ensina o alinhamento e a permanência; Vinyasa ensina a fluidez e a presença no movimento. Para iniciantes, Hatha é geralmente mais seguro porque permite mais tempo de aprendizado em cada postura.</strong></p>
+              <p>A escolha entre os dois é também uma questão de temperamento. Quem funciona melhor com estrutura e pause tende a gostar mais do Hatha. Quem precisa de movimento para entrar em quietude — e se sente presa em posturas estáticas — geralmente encontra no Vinyasa a porta de entrada perfeita. Muitos praticantes acabam combinando os dois ao longo da semana.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="qual-a-diferenca-entre-yoga-e-pilates">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-33" id="faq-q-33">
+              Qual a diferença entre yoga e pilates?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-33" role="region" aria-labelledby="faq-q-33">
+              <p><strong>Yoga e pilates trabalham o corpo de formas complementares mas com ênfases distintas. O pilates foca no fortalecimento do core e na estabilidade postural — é predominantemente físico. O yoga integra respiração, atenção mental e regulação do sistema nervoso além do corpo físico. Pilates é mais indicado para reabilitação e força; yoga, para regulação mental e mobilidade.</strong></p>
+              <p>Ambas as práticas são benéficas e frequentemente se complementam. Quem faz pilates regularmente costuma encontrar no yoga o trabalho de regulação mental e mobilidade que o pilates não oferece. Quem faz yoga frequentemente descobre no pilates um trabalho de fortalecimento muscular mais direcionado. Não é necessário escolher: muitos praticantes alternam as duas ao longo da semana.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-pode-substituir-a-musculacao">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-34" id="faq-q-34">
+              Yoga pode substituir a musculação?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-34" role="region" aria-labelledby="faq-q-34">
+              <p><strong>Depende do objetivo. Para desenvolvimento de força máxima e hipertrofia muscular intensa, não. Para manutenção de força funcional, controle de peso, saúde articular e equilíbrio muscular, o yoga pode ser suficiente — especialmente modalidades mais ativas como Vinyasa e Yoga HIIT. Para a maioria das pessoas, yoga e musculação se complementam melhor do que se substituem.</strong></p>
+              <p>O yoga desenvolve o que os praticantes chamam de "força funcional" — a capacidade de sustentar o próprio peso em múltiplas direções, com equilíbrio e controle. Sustenter uma postura de equilíbrio em pé por cinco respirações exige força muscular real, não decorativa. Quem combina yoga com musculação frequentemente percebe melhora no desempenho em ambas as práticas.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="posso-fazer-yoga-e-musculacao-no-mesmo-dia">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-35" id="faq-q-35">
+              Posso fazer yoga e musculação no mesmo dia?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-35" role="region" aria-labelledby="faq-q-35">
+              <p><strong>Sim, com planejamento. A recomendação geral é: yoga antes da musculação (como aquecimento e ativação) ou yoga algumas horas depois (como recuperação). Evitar yoga intenso imediatamente após musculação pesada, porque o tecido muscular fatigado não responde bem a alongamento forçado. Yoga Restaurativo ou Yoga Nidra após musculação, porém, acelera a recuperação.</strong></p>
+              <p>Para quem treina musculação de manhã e quer fazer yoga à noite: funciona muito bem. O yoga noturno ajuda a remover o estado de tensão muscular e mental que o treino intenso deixa, melhora a qualidade do sono e prepara o corpo para o próximo treino.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-e-considerado-cardio">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-36" id="faq-q-36">
+              Yoga é considerado cardio?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-36" role="region" aria-labelledby="faq-q-36">
+              <p><strong>Depende da modalidade. Vinyasa e Yoga HIIT elevam a frequência cardíaca a zonas de exercício moderado (55 a 70% da frequência máxima) — equivalente a uma caminhada acelerada. Hatha e Restaurativo têm baixo componente cardiovascular. Para os benefícios específicos do exercício aeróbico intenso, o yoga convencional não substitui a corrida ou o ciclismo — mas complementa com o que esses exercícios não oferecem.</strong></p>
+              <p>O valor cardíaco do yoga vai além da frequência cardíaca durante a sessão. A redução crônica do cortisol, a melhora da variabilidade da frequência cardíaca (um marcador de saúde cardiovascular) e a regulação da pressão arterial produzidas pela prática regular são benefícios cardiovasculares que nenhuma métrica de "calorias queimadas por hora" captura.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-e-religiao">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-37" id="faq-q-37">
+              Yoga é religião?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-37" role="region" aria-labelledby="faq-q-37">
+              <p><strong>Não. Yoga tem origens filosóficas nas tradições indianas, mas praticar yoga não exige nenhuma crença religiosa, filiação espiritual ou mudança de cosmovisão. Os benefícios físicos e mentais — redução de ansiedade, melhora do sono, alívio de dores — são disponíveis para qualquer pessoa, independentemente do que acredita. A respiração ativa o nervo vago da mesma forma em ateus e em pessoas de qualquer fé.</strong></p>
+              <p>A confusão entre yoga e religião tem duas origens: a histórica (yoga nasceu dentro de uma tradição filosófica indiana que inclui conceitos espirituais) e a mercadológica (parte da indústria do bem-estar ocidental adotou uma estética "espiritual" misturada). Numa aula de yoga laica, o que acontece é simplesmente movimento, respiração e atenção ao corpo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="cristaos-podem-praticar-yoga">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-38" id="faq-q-38">
+              Cristãos podem praticar yoga?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-38" role="region" aria-labelledby="faq-q-38">
+              <p><strong>Do ponto de vista da prática laica, sim. Uma aula de yoga que se restringe ao trabalho físico, à respiração e à regulação do sistema nervoso não entra em conflito com nenhum princípio cristão. A questão relevante é o conteúdo da aula: posturas e respiração não têm afiliação religiosa; mantras, invocações e rituais espirituais específicos podem ser incompatíveis com algumas tradições.</strong></p>
+              <p>A decisão é pessoal e depende da tradição cristã específica de cada pessoa. Muitas igrejas evangélicas, por exemplo, orientam seus membros a evitar certas práticas associadas ao ocultismo — e algumas incluem yoga nessa categoria. Outras, incluindo setores do catolicismo, reconhecem o yoga como prática corporal neutra. Consultar sua liderança religiosa é o caminho mais honesto do que buscar uma resposta universal.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="o-que-e-yoga-secular">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-39" id="faq-q-39">
+              O que é yoga secular?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-39" role="region" aria-labelledby="faq-q-39">
+              <p><strong>Yoga secular é a prática de yoga focada exclusivamente em seus benefícios físicos e mentais, sem qualquer componente espiritual, filosófico ou ritual. Não há mantras, não há referências a divindades, não há afirmações de fé. O vocabulário é de neurofisiologia e anatomia, não de tradição. É o formato mais adequado para pessoas que querem os benefícios do yoga sem o pacote espiritual.</strong></p>
+              <p>A distinção é importante porque o yoga secular produz os mesmos benefícios documentados que qualquer outra forma de yoga: a respiração consciente ativa o nervo vago independentemente de qualquer cosmologia. O que muda é o enquadramento — e isso importa para muitas pessoas que chegam com resistência à dimensão espiritual.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-online-ao-vivo-funciona-tanto-quanto-o-presencial">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-40" id="faq-q-40">
+              Yoga online ao vivo funciona tanto quanto o presencial?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-40" role="region" aria-labelledby="faq-q-40">
+              <p><strong>Para a maioria das pessoas, sim — desde que seja ao vivo com professor que vê os alunos, não aula gravada. A diferença fundamental entre yoga online ao vivo e presencial é apenas o toque físico do professor. A correção verbal e visual, a presença, a adaptação em tempo real e a relação com a professora se mantêm integralmente online. O que não se mantém é o ajuste manual de postura — que muitas tradições de yoga nem utilizam.</strong></p>
+              <p>O que muda positivamente no online: a eliminação do deslocamento (que para quatro aulas semanais representa horas recuperadas por mês), a possibilidade de praticar em casa no próprio espaço e a eliminação de barreiras logísticas que interrompem a consistência. Para a maioria das alunas, a consistência que o online propicia supera o benefício marginal do presencial.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="o-que-preciso-para-fazer-yoga-online-ao-vivo">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-41" id="faq-q-41">
+              O que preciso para fazer yoga online ao vivo?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-41" role="region" aria-labelledby="faq-q-41">
+              <p><strong>Para participar de uma aula de yoga online ao vivo você precisa: tapete de yoga, espaço de aproximadamente 2m x 1m, roupa confortável, conexão à internet estável e câmera funcionando (para que a professora veja você). A câmera ligada é importante: é através dela que a professora faz as correções de postura em tempo real. Sem câmera, a aula se torna equivalente a um vídeo gravado.</strong></p>
+              <p>O espaço ideal tem boa iluminação e posição da câmera que permita à professora ver o corpo inteiro — ou pelo menos o que está sendo trabalhado na postura. Muitas alunas usam o computador sobre uma superfície elevada ou posicionam o celular lateralmente para capturar o corpo de comprido. A professora pode orientar o posicionamento na primeira aula.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="a-professora-consegue-corrigir-minha-postura-em-uma-aula-online">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-42" id="faq-q-42">
+              A professora consegue corrigir minha postura em uma aula online?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-42" role="region" aria-labelledby="faq-q-42">
+              <p><strong>Sim, com precisão surpreendente. A correção verbal guiada visualmente — "afaste o joelho direito 2 centímetros, sinta o peso distribuir no calcanhar" — é tão eficaz quanto o ajuste manual para a maioria das posturas. A professora vê o alinhamento, identifica as compensações e guia a correção em tempo real. Isso é fundamentalmente diferente de uma aula gravada, onde a professora fala para uma câmera sem ver ninguém.</strong></p>
+              <p>A única correção que o formato online não oferece é o toque físico — o ajuste manual de um ombro, o reposicionamento de um quadril com as mãos. Para a maioria das alunas e da maioria das posturas, essa limitação é marginal. Para condições ortopédicas complexas que exigem reposicionamento manual frequente, uma consulta presencial eventual pode complementar a prática online regular.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="como-escolher-uma-professora-de-yoga-online">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-43" id="faq-q-43">
+              Como escolher uma professora de yoga online?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-43" role="region" aria-labelledby="faq-q-43">
+              <p><strong>Os critérios mais importantes: formação certificada por escola reconhecida (mínimo 200 horas), experiência de ensino comprovada, especialização na modalidade que você busca e — principalmente — a sensação de estar à vontade na presença dela. Nenhum certificado substitui a experiência de fazer uma aula experimental e verificar se o estilo de ensino faz sentido para você.</strong></p>
+              <p>Avalie também: a professora vê os alunos durante a aula? Adapta as posturas para diferentes corpos e limitações? Oferece suporte fora das aulas? Tem depoimentos verificáveis de alunas? A primeira aula experimental não é só para conhecer o yoga — é para conhecer a professora. A relação com quem ensina é um dos fatores mais determinantes para a consistência da prática.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="qual-aplicativo-ou-plataforma-usar-para-aulas-de-yoga-online-ao-vivo">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-44" id="faq-q-44">
+              Qual aplicativo ou plataforma usar para aulas de yoga online ao vivo?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-44" role="region" aria-labelledby="faq-q-44">
+              <p><strong>A plataforma mais usada para aulas de yoga online ao vivo no Brasil é o Zoom. A experiência com o Zoom é superior a outras plataformas para esse formato porque oferece boa qualidade de vídeo e áudio, permite à professora ver todos os alunos simultaneamente e tem estabilidade comprovada para sessões de 60 a 90 minutos. Google Meet e Teams funcionam mas têm limitações de qualidade de vídeo em grupos maiores.</strong></p>
+              <p>Para alunas iniciantes no formato online: antes da primeira aula, teste a câmera e o microfone, verifique a velocidade da internet e configure o espaço de prática. A maioria das professoras envia um guia de configuração antes da primeira aula. Não é tecnicamente complexo — e a maioria das dificuldades técnicas se resolve na primeira semana.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="aulas-ao-vivo-sao-melhores-do-que-videos-gravados-de-yoga">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-45" id="faq-q-45">
+              Aulas ao vivo são melhores do que vídeos gravados de yoga?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-45" role="region" aria-labelledby="faq-q-45">
+              <p><strong>Para aprendizado e segurança, sim — especialmente para iniciantes. Vídeos gravados são úteis para complementar a prática, revisar posturas ou praticar quando não há aula ao vivo disponível. Mas não substituem a presença de um professor que vê você: sem correção em tempo real, é fácil desenvolver hábitos posturais incorretos sem perceber. A aula ao vivo é proteção — não luxo.</strong></p>
+              <p>A dimensão relacional também é irreplicável em vídeo: a professora sabe seu nome, percebe quando você faltou, nota quando algo mudou no seu corpo ou no seu humor. Essa presença — saber que alguém te vê e te espera — é um dos fatores mais subestimados na construção de um hábito consistente de prática.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="posso-fazer-yoga-na-gravidez">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-46" id="faq-q-46">
+              Posso fazer yoga na gravidez?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-46" role="region" aria-labelledby="faq-q-46">
+              <p><strong>Sim, com acompanhamento qualificado. Yoga na gravidez é seguro e benéfico para a maioria das mulheres — reduz dores lombares, alivia edema, melhora a qualidade do sono e prepara o corpo e a respiração para o parto. A condição essencial é informar à professora sobre a gravidez, semana gestacional e qualquer restrição médica, e praticar exclusivamente sob orientação de professora com formação específica em yoga para gestantes.</strong></p>
+              <p>As restrições variam por trimestre: no primeiro, evitar posições de bruços e inversões intensas; no segundo e terceiro, adaptar posturas em decúbito dorsal para evitar compressão da veia cava. Uma professora com formação específica conhece essas adaptações — não é uma questão de improvisação.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="posso-fazer-yoga-com-dor-na-lombar">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-47" id="faq-q-47">
+              Posso fazer yoga com dor na lombar?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-47" role="region" aria-labelledby="faq-q-47">
+              <p><strong>Depende da origem e intensidade da dor. Para dor lombar crônica sem diagnóstico de hérnia discal aguda ou instabilidade vertebral: yoga é frequentemente recomendado como parte do tratamento — fortalece o core, melhora a mobilidade dos quadris e corrige padrões posturais que sobrecarregam a lombar. Para dor aguda ou com diagnóstico específico: consultar o médico antes de começar.</strong></p>
+              <p>A informação mais importante: diga à professora sobre a dor antes da aula. Uma professora qualificada saberá quais posturas adaptar, quais evitar e como trabalhar de forma que a prática seja terapêutica em vez de agravar. Começar yoga com dor lombar sem informar a professora é o cenário mais arriscado — mais do que a dor em si.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="posso-fazer-yoga-antes-de-dormir">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-48" id="faq-q-48">
+              Posso fazer yoga antes de dormir?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-48" role="region" aria-labelledby="faq-q-48">
+              <p><strong>Sim — e é uma das aplicações mais eficazes do yoga. Uma prática de 20 a 45 minutos entre 1 e 2 horas antes de dormir, focada em posturas suaves, respiração longa e finalizada com Savasana ou Yoga Nidra, produz redução mensurável nos níveis de cortisol e prepara o sistema nervoso para o sono. Evitar Vinyasa intenso ou Yoga HIIT próximo ao horário de dormir — esses estilos energizam em vez de desacelerar.</strong></p>
+              <p>Para quem tem dificuldade de "desligar" antes de dormir, o yoga noturno funciona como uma transição ritualizada entre o dia e a noite. O corpo aprende, com a repetição, que essa sequência de movimentos e respiração sinaliza que o dia terminou. Com o tempo, a própria entrada no tapete já começa a desacelerar o sistema nervoso.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="posso-fazer-yoga-depois-de-comer">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-49" id="faq-q-49">
+              Posso fazer yoga depois de comer?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-49" role="region" aria-labelledby="faq-q-49">
+              <p><strong>O ideal é aguardar pelo menos 2 horas após uma refeição grande e 1 hora após uma refeição leve antes de praticar yoga. Posturas de torção, inversões e flexões abdominais são desconfortáveis e potencialmente prejudiciais com o estômago cheio. Yoga Nidra e meditação são exceções — podem ser feitos com menos intervalo porque não envolvem compressão abdominal.</strong></p>
+              <p>A recomendação não é por superstição: é anatomia. O diafragma, que é fundamental para a respiração consciente no yoga, tem mobilidade reduzida quando o estômago está cheio. Além disso, as torções e compressões abdominais que o yoga inclui podem causar náusea ou refluxo quando feitas com digestão em andamento.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="posso-fazer-yoga-na-cadeira">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-50" id="faq-q-50">
+              Posso fazer yoga na cadeira?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-50" role="region" aria-labelledby="faq-q-50">
+              <p><strong>Sim. Yoga na cadeira — também chamado de Chair Yoga — é uma modalidade adaptada para pessoas com mobilidade reduzida, condições ortopédicas que limitam posturas no chão, ou que passam muito tempo sentadas. Mantém os benefícios essenciais do yoga: respiração consciente, mobilidade articular, atenção ao corpo e regulação do sistema nervoso — sem exigir que o praticante sente ou deite no tapete.</strong></p>
+              <p>É especialmente indicado para quem trabalha muitas horas sentada, para idosos com dificuldade de se sentar no chão, e como alternativa para dias em que o corpo não permite a prática completa. Muitas posturas de yoga têm versões igualmente eficazes realizadas na cadeira — e algumas são mais acessíveis dessa forma do que no tapete.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="posso-fazer-yoga-gripada-ou-resfriada">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-51" id="faq-q-51">
+              Posso fazer yoga gripada ou resfriada?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-51" role="region" aria-labelledby="faq-q-51">
+              <p><strong>Depende da intensidade dos sintomas. Sintomas leves — leve congestão, cansaço moderado — admitem uma prática suave: Hatha devagar, Yoga Restaurativo ou Yoga Nidra. Febre, sintomas intensos ou gripe declarada pedem repouso total. O sistema imune em resposta ativa precisa de energia — qualquer prática física a desvia para o músculo em vez de para a defesa.</strong></p>
+              <p>Há posturas que podem auxiliar na recuperação de resfriados leves — especialmente inversões suaves como "pernas na parede" e práticas de respiração que facilitam a drenagem nasal. Mas o julgamento deve ser honesto: se o corpo está pedindo descanso, yoga "suave" é repouso — não o tapete.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-emagrece">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-52" id="faq-q-52">
+              Yoga emagrece?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-52" role="region" aria-labelledby="faq-q-52">
+              <p><strong>Yoga contribui para o controle de peso, mas não é primariamente uma prática de emagrecimento. O mecanismo não é principalmente o gasto calórico (uma aula de Hatha queima entre 150 e 300 calorias por hora): é a regulação do cortisol cronicamente elevado — que está diretamente associado ao acúmulo de gordura abdominal — e a melhora da qualidade do sono, que regula os hormônios da fome. A consciência corporal que o yoga desenvolve também tende a influenciar escolhas alimentares.</strong></p>
+              <p>Para quem pratica yoga com regularidade: a maioria não relata perda de peso expressiva nas primeiras semanas, mas relata mudança na relação com o próprio corpo — e com a comida. Isso se traduz, ao longo de meses, em hábitos que sustentam um peso mais saudável de forma muito mais duradoura do que qualquer dieta de curto prazo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-define-o-corpo">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-53" id="faq-q-53">
+              Yoga define o corpo?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-53" role="region" aria-labelledby="faq-q-53">
+              <p><strong>Sim, com prática regular e consistente. Modalidades ativas de yoga — Vinyasa, Hatha intenso, Yoga HIIT — desenvolvem força muscular funcional, melhoram o tônus e a postura. O resultado visual é um corpo mais alongado, mais sustentado e com melhor alinhamento. Não é o mesmo resultado da musculação com cargas — é uma definição diferente: mais funcional, mais integrada.</strong></p>
+              <p>O que mais transforma a aparência no yoga não é o músculo isolado — é a postura. Uma coluna mais ereta, ombros naturalmente afastados das orelhas e quadril bem alinhado mudam silhueta e presença de forma que nenhum exercício de foco muscular isolado consegue. E essa mudança postural começa a aparecer bem antes de qualquer mudança na composição corporal.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="em-quanto-tempo-o-yoga-produz-resultados-perceptiveis">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-54" id="faq-q-54">
+              Em quanto tempo o yoga produz resultados perceptíveis?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-54" role="region" aria-labelledby="faq-q-54">
+              <p><strong>Os primeiros resultados são rápidos: melhora do sono e redução de ansiedade costumam aparecer nas primeiras duas semanas de prática consistente. Flexibilidade e redução de dores crônicas aparecem entre 4 e 8 semanas. Mudanças de força, postura e composição corporal levam de 3 a 6 meses. A ordem importa: o sistema nervoso muda antes do corpo — e essa é frequentemente a mudança mais significativa.</strong></p>
+              <p>A variável mais determinante não é a intensidade da prática — é a consistência. Três sessões por semana durante três meses produzem resultados incomparavelmente maiores do que sessões diárias durante três semanas. O corpo responde a padrões repetidos, não a esforços concentrados.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="yoga-melhora-a-postura">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-55" id="faq-q-55">
+              Yoga melhora a postura?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-55" role="region" aria-labelledby="faq-q-55">
+              <p><strong>Sim — e é uma das mudanças mais universalmente relatadas por praticantes regulares. O yoga fortalece a musculatura profunda da coluna e do core (que sustenta o alinhamento), aumenta a consciência do próprio corpo no espaço e libera as tensões musculares crônicas que tracionam a coluna para fora do eixo. Mudanças posturais perceptíveis costumam aparecer entre 6 e 12 semanas de prática regular.</strong></p>
+              <p>A melhora postural no yoga não vem de "tentar ficar ereta" com esforço — vem de fortalecer o que sustenta a postura sem esforço. Quando o core funciona corretamente, a coluna se alinha naturalmente. Quando os ombros liberam a tensão crônica, eles caem no lugar certo sem que você precise lembrá-los. O yoga treina a postura pela raiz, não pelo sintoma.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem" id="o-yoga-tem-contraindicacoes">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-56" id="faq-q-56">
+              O yoga tem contraindicações?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-56" role="region" aria-labelledby="faq-q-56">
+              <p><strong>Yoga tem poucas contraindicações absolutas, mas exige adaptações em algumas condições. Requerem atenção especial: glaucoma (inversões contraindicadas), hérnia discal aguda (posturas que comprimem a coluna adaptadas), gravidez de alto risco (acompanhamento médico antes de iniciar), hipertensão descontrolada (evitar inversões), e cirurgias recentes (aguardar liberação médica). Para todas essas condições, informe a professora antes da primeira aula.</strong></p>
+              <p>A regra geral: se você tem uma condição médica diagnosticada, informe a professora antes de começar. Uma professora qualificada conhece as adaptações necessárias e pode conduzir a prática de forma segura — ou indicar quando o clearance médico é necessário antes de iniciar. Yoga praticado com informação adequada tem perfil de segurança excelente.</p>
+            </div>
+          </div>
+
 
         </div>
       </div>
@@ -1220,12 +2252,14 @@
         <button class="glos-cat-btn" data-cat="conceito" aria-pressed="false">Conceito</button>
         <button class="glos-cat-btn" data-cat="pratica" aria-pressed="false">Prática</button>
         <button class="glos-cat-btn" data-cat="modalidade" aria-pressed="false">Modalidades</button>
+        <button class="glos-cat-btn" data-cat="mitos" aria-pressed="false">Mitos</button>
+        <button class="glos-cat-btn" data-cat="formato" aria-pressed="false">Formato</button>
         <button class="glos-cat-btn" data-cat="beneficio" aria-pressed="false">Benefícios</button>
       </div>
 
       <div class="glossario-grid" role="list" aria-label="Glossário de yoga">
 
-        <article class="glos-card fade-up" data-cat="conceito" role="listitem" id="o-que-e-yoga-glos"
+        <article class="glos-card fade-up" data-cat="conceito" role="listitem" id="o-que-e-yoga"
           aria-labelledby="glos-yoga">
           <div class="glos-card-head">
             <h3 class="glos-term" id="glos-yoga">Yoga</h3>
@@ -1297,7 +2331,7 @@
         <article class="glos-card fade-up fade-up-delay-1" data-cat="modalidade" role="listitem" id="vinyasa"
           aria-labelledby="glos-vinyasa">
           <div class="glos-card-head">
-            <h3 class="glos-term" id="glos-vinyasa">Vinyasa</h3>
+            <h3 class="glos-term" id="glos-vinyasa">Vinyasa Yoga</h3>
             <span class="glos-cat-tag">Modalidade</span>
           </div>
           <div class="glos-card-body">
@@ -1335,6 +2369,33 @@
           </div>
         </article>
 
+        <article class="glos-card fade-up" data-cat="modalidade" role="listitem" id="swasthya"
+          aria-labelledby="glos-swasthya">
+          <div class="glos-card-head">
+            <h3 class="glos-term" id="glos-swasthya">SwáSthya Yoga</h3>
+            <span class="glos-cat-tag">Modalidade</span>
+          </div>
+          <div class="glos-card-body">
+            <p class="glos-definition">Tradição de yoga com raiz brasileira, estruturada em postura, respiração,
+              relaxamento e autoconhecimento.</p>
+            <p>O nome significa "aquele que está estabelecido em si mesmo". A proposta é terapêutica e integral: o
+              praticante não sai apenas com o corpo alongado, mas com sensação de inteireza.</p>
+          </div>
+        </article>
+
+        <article class="glos-card fade-up fade-up-delay-1" data-cat="modalidade" role="listitem" id="acroyoga"
+          aria-labelledby="glos-acroyoga">
+          <div class="glos-card-head">
+            <h3 class="glos-term" id="glos-acroyoga">Acroyoga</h3>
+            <span class="glos-cat-tag">Modalidade</span>
+          </div>
+          <div class="glos-card-body">
+            <p class="glos-definition">Prática que combina yoga, acrobacia e trabalho em dupla.</p>
+            <p>Uma pessoa sustenta e a outra voa, mas o centro da prática não é o efeito visual: é confiança,
+              comunicação e presença. O corpo aprende a sustentar e a ceder o peso com segurança.</p>
+          </div>
+        </article>
+
         <article class="glos-card fade-up" data-cat="modalidade" role="listitem" id="yin-yoga"
           aria-labelledby="glos-yin">
           <div class="glos-card-head">
@@ -1350,17 +2411,155 @@
           </div>
         </article>
 
-        <article class="glos-card fade-up fade-up-delay-1" data-cat="beneficio" role="listitem" id="yoga-nidra"
+        <article class="glos-card fade-up fade-up-delay-1" data-cat="modalidade" role="listitem" id="yoga-nidra"
           aria-labelledby="glos-nidra">
           <div class="glos-card-head">
             <h3 class="glos-term" id="glos-nidra">Yoga Nidra</h3>
-            <span class="glos-cat-tag">Benefício</span>
+            <span class="glos-cat-tag">Modalidade</span>
           </div>
           <div class="glos-card-body">
             <p class="glos-definition">Relaxamento guiado feito completamente deitada, entre a vigília e o sono.</p>
             <p>Uma sessão de 30 minutos é descrita como equivalente a 2–3 horas de sono em recuperação do sistema
               nervoso. Para quem tem insônia ou ansiedade, é uma das ferramentas mais eficazes — porque não exige
               esforço, apenas deitar e seguir a voz.</p>
+          </div>
+        </article>
+
+        <article class="glos-card fade-up" data-cat="modalidade" role="listitem" id="neuroyoga"
+          aria-labelledby="glos-neuroyoga">
+          <div class="glos-card-head">
+            <h3 class="glos-term" id="glos-neuroyoga">Neuroyoga</h3>
+            <span class="glos-cat-tag">Modalidade</span>
+          </div>
+          <div class="glos-card-body">
+            <p class="glos-definition">Abordagem que integra explicitamente os conhecimentos da neurociência ao
+              yoga.</p>
+            <p>Em vez de explicar os efeitos só pela tradição, mostra como o cérebro responde ao movimento, à
+              respiração e à atenção. Isso torna a prática mais precisa, especialmente em saúde mental e burnout.</p>
+          </div>
+        </article>
+
+        <article class="glos-card fade-up fade-up-delay-1" data-cat="modalidade" role="listitem" id="yoga-hiit"
+          aria-labelledby="glos-hiit">
+          <div class="glos-card-head">
+            <h3 class="glos-term" id="glos-hiit">Yoga HIIT</h3>
+            <span class="glos-cat-tag">Modalidade</span>
+          </div>
+          <div class="glos-card-body">
+            <p class="glos-definition">Combinação de posturas de yoga com intervalos de alta intensidade.</p>
+            <p>Alterna esforço cardiovascular com recuperação ativa sem abandonar a consciência corporal. Oferece
+              condicionamento, força e resistência, mas a respiração continua guiando o esforço.</p>
+          </div>
+        </article>
+
+        <article class="glos-card fade-up" data-cat="mitos" role="listitem" id="flexibilidade"
+          aria-labelledby="glos-flexibilidade">
+          <div class="glos-card-head">
+            <h3 class="glos-term" id="glos-flexibilidade">Flexibilidade no Yoga</h3>
+            <span class="glos-cat-tag">Mitos</span>
+          </div>
+          <div class="glos-card-body">
+            <p class="glos-definition">Flexibilidade não é pré-requisito para o yoga — é consequência.</p>
+            <p>Quem começa sem flexibilidade tem exatamente o yoga que precisa: adaptado ao corpo de hoje. Forçar além
+              do limite não acelera o processo — machuca.</p>
+          </div>
+        </article>
+
+        <article class="glos-card fade-up fade-up-delay-1" data-cat="mitos" role="listitem" id="yoga-espiritualidade"
+          aria-labelledby="glos-espiritualidade">
+          <div class="glos-card-head">
+            <h3 class="glos-term" id="glos-espiritualidade">Yoga e Espiritualidade</h3>
+            <span class="glos-cat-tag">Mitos</span>
+          </div>
+          <div class="glos-card-body">
+            <p class="glos-definition">Praticar yoga não exige crença religiosa, filiação espiritual ou mudança de
+              cosmovisão.</p>
+            <p>O yoga tem origem filosófica indiana, mas seus benefícios físicos e mentais estão disponíveis para
+              qualquer pessoa. Em uma aula laica, o que acontece é movimento, respiração e atenção ao corpo.</p>
+          </div>
+        </article>
+
+        <article class="glos-card fade-up" data-cat="mitos" role="listitem" id="yoga-meditacao"
+          aria-labelledby="glos-meditacao">
+          <div class="glos-card-head">
+            <h3 class="glos-term" id="glos-meditacao">Yoga e Meditação</h3>
+            <span class="glos-cat-tag">Mitos</span>
+          </div>
+          <div class="glos-card-body">
+            <p class="glos-definition">Yoga e meditação são práticas distintas que frequentemente andam juntas.</p>
+            <p>A meditação observa os pensamentos; o yoga usa corpo e respiração como porta de entrada para a mesma
+              quietude interior. Para muita gente, o movimento é um caminho mais acessível do que sentar em silêncio.
+            </p>
+          </div>
+        </article>
+
+        <article class="glos-card fade-up fade-up-delay-1" data-cat="formato" role="listitem" id="yoga-online-ao-vivo"
+          aria-labelledby="glos-online">
+          <div class="glos-card-head">
+            <h3 class="glos-term" id="glos-online">Yoga ao Vivo Online</h3>
+            <span class="glos-cat-tag">Formato</span>
+          </div>
+          <div class="glos-card-body">
+            <p class="glos-definition">Prática conduzida em tempo real por professor, com alunos participando por
+              videochamada.</p>
+            <p>A diferença para aulas gravadas é a correção de postura ao vivo e a presença genuína. A experiência se
+              aproxima da aula presencial, sem deslocamento.</p>
+          </div>
+        </article>
+
+        <article class="glos-card fade-up" data-cat="beneficio" role="listitem" id="yoga-ansiedade"
+          aria-labelledby="glos-ansiedade">
+          <div class="glos-card-head">
+            <h3 class="glos-term" id="glos-ansiedade">Yoga para Ansiedade</h3>
+            <span class="glos-cat-tag">Benefício</span>
+          </div>
+          <div class="glos-card-body">
+            <p class="glos-definition">O yoga atua diretamente no sistema nervoso autônomo e ajuda a reduzir o estado
+              crônico de alerta.</p>
+            <p>Através do pranayama e de posturas que estimulam o nervo vago, a prática reduz cortisol, desacelera o
+              coração e oferece uma via concreta de regulação fisiológica.</p>
+          </div>
+        </article>
+
+        <article class="glos-card fade-up fade-up-delay-1" data-cat="beneficio" role="listitem" id="yoga-insonia"
+          aria-labelledby="glos-insonia">
+          <div class="glos-card-head">
+            <h3 class="glos-term" id="glos-insonia">Yoga para Insônia</h3>
+            <span class="glos-cat-tag">Benefício</span>
+          </div>
+          <div class="glos-card-body">
+            <p class="glos-definition">O yoga melhora o sono ao regular o cortisol e ativar o sistema nervoso
+              parassimpático.</p>
+            <p>Muitas alunas relatam melhora perceptível nas primeiras duas semanas de prática regular. O corpo aprende
+              a reconhecer o sinal de que é seguro desacelerar e dormir.</p>
+          </div>
+        </article>
+
+        <article class="glos-card fade-up" data-cat="beneficio" role="listitem" id="yoga-lombar"
+          aria-labelledby="glos-lombar">
+          <div class="glos-card-head">
+            <h3 class="glos-term" id="glos-lombar">Yoga para Dor Lombar</h3>
+            <span class="glos-cat-tag">Benefício</span>
+          </div>
+          <div class="glos-card-body">
+            <p class="glos-definition">O yoga atua na dor lombar fortalecendo o core, melhorando mobilidade e
+              corrigindo padrões posturais.</p>
+            <p>A correção em tempo real por um professor é especialmente importante. Com orientação adequada, a prática
+              trata várias causas da dor ao mesmo tempo; sem adaptação, pode piorar.</p>
+          </div>
+        </article>
+
+        <article class="glos-card fade-up fade-up-delay-1" data-cat="beneficio" role="listitem" id="yoga-menopausa"
+          aria-labelledby="glos-menopausa">
+          <div class="glos-card-head">
+            <h3 class="glos-term" id="glos-menopausa">Yoga para Menopausa</h3>
+            <span class="glos-cat-tag">Benefício</span>
+          </div>
+          <div class="glos-card-body">
+            <p class="glos-definition">O yoga tem evidências específicas para o manejo de sintomas como ondas de calor,
+              insônia, ansiedade e rigidez articular.</p>
+            <p>Técnicas de respiração e posturas adequadas atuam diretamente nas alterações do sistema nervoso
+              autônomo dessa fase, oferecendo suporte complementar embasado.</p>
           </div>
         </article>
 
@@ -1531,3 +2730,4 @@
 </body>
 
 </html>
+

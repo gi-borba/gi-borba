@@ -739,7 +739,7 @@ p + p { margin-top: 16px; }
   transition: max-height .4s ease, padding .3s ease;
   padding: 0 28px;
 }
-.faq-answer.open { max-height: 600px; padding: 0 28px 24px; }
+.faq-answer.open { padding: 0 28px 24px; }
 .faq-answer p { font-size: 16px; color: var(--brown-mid); line-height: 1.85; }
 .faq-answer p strong { color: var(--brown-dark); }
 

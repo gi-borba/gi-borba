@@ -94,6 +94,19 @@ function updateActiveLinks() {
 // ─── FAQ ACCORDION ────────────────────────────────────────
 function initFaq() {
   var buttons = document.querySelectorAll('.faq-question');
+
+  function setAnswerState(answer, open) {
+    if (!answer) return;
+    answer.classList.toggle('open', open);
+    answer.style.maxHeight = open ? answer.scrollHeight + 'px' : '0px';
+  }
+
+  function refreshOpenAnswers() {
+    document.querySelectorAll('.faq-answer.open').forEach(function (answer) {
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    });
+  }
+
   buttons.forEach(function (btn) {
     btn.addEventListener('click', function () {
       var expanded = btn.getAttribute('aria-expanded') === 'true';
@@ -103,14 +116,17 @@ function initFaq() {
         if (other !== btn) {
           other.setAttribute('aria-expanded', 'false');
           var otherAns = other.nextElementSibling;
-          if (otherAns) otherAns.classList.remove('open');
+          setAnswerState(otherAns, false);
         }
       });
 
       btn.setAttribute('aria-expanded', String(!expanded));
-      if (answer) answer.classList.toggle('open', !expanded);
+      setAnswerState(answer, !expanded);
     });
   });
+
+  window.addEventListener('resize', refreshOpenAnswers);
+  window.addEventListener('load', refreshOpenAnswers);
 }
 
 // ─── GLOSSÁRIO FILTER ─────────────────────────────────────
