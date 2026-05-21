@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Política de Privacidade da Giovana Borba Yoga. Entenda como dados pessoais são coletados, usados, armazenados e protegidos conforme a LGPD.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Política de Privacidade · Giovana Borba Yoga">
+  <meta property="og:description"
+    content="Como a Giovana Borba Yoga trata dados pessoais de alunas e visitantes, em conformidade com a LGPD.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="canonical" href="https://giborba.com.br/politica-de-privacidade/">
+  <title>Política de Privacidade · Giovana Borba Yoga</title>
+  <link rel="stylesheet" href="../style.css">
+  <script>document.documentElement.classList.add('js-ready')</script>
+
+  <style>
+    .legal-page {
+      padding-top: var(--nav-h);
+      background: var(--cream);
+    }
+
+    .legal-hero {
+      padding: 88px 0 64px;
+      background:
+        linear-gradient(rgba(62, 45, 28, .78), rgba(62, 45, 28, .72)),
+        url('../images/gi-borba-yoga-hero.png') center 42% / cover no-repeat;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .legal-hero .label {
+      justify-content: center;
+      color: var(--cana-light);
+    }
+
+    .legal-hero .label::after {
+      display: none;
+    }
+
+    .legal-hero h1 {
+      max-width: 820px;
+      margin: 0 auto 18px;
+      color: var(--white);
+      font-size: clamp(42px, 8vw, 82px);
+      font-weight: 300;
+      font-style: italic;
+    }
+
+    .legal-hero p {
+      max-width: 680px;
+      margin: 0 auto;
+      color: rgba(253, 250, 246, .88);
+      font-size: 17px;
+    }
+
+    .legal-updated {
+      display: inline-flex;
+      margin-top: 28px;
+      padding: 8px 18px;
+      border: 1px solid rgba(253, 250, 246, .35);
+      border-radius: var(--radius-pill);
+      color: rgba(253, 250, 246, .82);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .legal-layout {
+      display: grid;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .legal-toc {
+      padding: 24px;
+      border: 1px solid var(--beige-mid);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .legal-toc h2 {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+
+    .legal-toc ol {
+      display: grid;
+      gap: 8px;
+      list-style: decimal;
+      padding-left: 20px;
+    }
+
+    .legal-toc a {
+      color: var(--brown-mid);
+      font-size: 14px;
+      transition: color var(--transition);
+    }
+
+    .legal-toc a:hover {
+      color: var(--olive);
+    }
+
+    .legal-content {
+      min-width: 0;
+    }
+
+    .legal-card {
+      padding: clamp(28px, 5vw, 56px);
+      border: 1px solid var(--beige-mid);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .legal-card section {
+      scroll-margin-top: calc(var(--nav-h) + 24px);
+    }
+
+    .legal-card section + section {
+      margin-top: 48px;
+      padding-top: 40px;
+      border-top: 1px solid var(--beige-mid);
+    }
+
+    .legal-card h2 {
+      margin-bottom: 18px;
+      font-size: clamp(28px, 4vw, 40px);
+    }
+
+    .legal-card h3 {
+      margin-top: 28px;
+      margin-bottom: 12px;
+      color: var(--brown-mid);
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .legal-card p,
+    .legal-card li {
+      color: var(--brown-mid);
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .legal-card strong {
+      color: var(--brown-dark);
+      font-weight: 500;
+    }
+
+    .legal-card em {
+      color: var(--taupe-dark);
+    }
+
+    .legal-card a {
+      color: var(--olive);
+      font-weight: 400;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .legal-card ul {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .legal-card li {
+      position: relative;
+      padding-left: 22px;
+    }
+
+    .legal-card li::before {
+      content: '';
+      position: absolute;
+      top: .78em;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--olive);
+    }
+
+    .legal-table-wrap {
+      margin-top: 20px;
+      overflow-x: auto;
+      border: 1px solid var(--beige-mid);
+      border-radius: var(--radius-sm);
+      background: var(--cream);
+    }
+
+    .legal-table {
+      width: 100%;
+      min-width: 620px;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .legal-table th,
+    .legal-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--beige-mid);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .legal-table th {
+      color: var(--brown-dark);
+      background: var(--beige-light);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .legal-table td {
+      color: var(--brown-mid);
+      line-height: 1.65;
+    }
+
+    .legal-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .legal-note {
+      margin-top: 28px;
+      padding: 22px 24px;
+      border-left: 3px solid var(--olive);
+      background: var(--cream);
+    }
+
+    .legal-note p {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-style: italic;
+      line-height: 1.65;
+    }
+
+    .legal-contact {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .legal-contact a {
+      display: inline-flex;
+      width: fit-content;
+    }
+
+    @media (min-width: 960px) {
+      .legal-layout {
+        grid-template-columns: 280px minmax(0, 1fr);
+      }
+
+      .legal-toc {
+        position: sticky;
+        top: calc(var(--nav-h) + 24px);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .legal-hero {
+        padding: 64px 0 48px;
+      }
+
+      .legal-card {
+        border-radius: var(--radius-sm);
+      }
+
+      .legal-card section + section {
+        margin-top: 36px;
+        padding-top: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="site-nav" role="navigation" aria-label="Navegação principal">
+    <div class="nav-inner">
+      <a href="../index.html#hero" class="nav-logo" aria-label="Gi Borba — Página inicial">
+        <img src="../images/Logo Marrom Sem Fundo.png" alt="Logo Gi Borba">
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html#sobre" aria-label="Sobre a professora Gi Borba">Sobre</a></li>
+        <li><a href="../index.html#modalidades" aria-label="Modalidades de yoga">Aulas</a></li>
+        <li><a href="../index.html#precos" aria-label="Horários e preços">Preços</a></li>
+        <li><a href="../index.html#depoimentos" aria-label="Depoimentos de alunas">Depoimentos</a></li>
+        <li><a href="../index.html#faq" aria-label="Perguntas frequentes">FAQ</a></li>
+        <li><a href="../index.html#contato" aria-label="Entrar em contato">Contato</a></li>
+      </ul>
+
+      <a href="https://wa.me/5511987530304?text=Quero%20fazer%20uma%20aula%20experimental%20gratuita"
+        class="btn btn-primary nav-cta" target="_blank" rel="noopener noreferrer"
+        aria-label="Agendar aula gratuita pelo WhatsApp">
+        Aula Gratuita
+      </a>
+
+      <button id="nav-hamburger" class="nav-hamburger" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav id="nav-mobile" class="nav-mobile" role="navigation" aria-label="Menu mobile">
+    <a href="../index.html#sobre">Sobre a Gi</a>
+    <a href="../index.html#modalidades">Aulas</a>
+    <a href="../index.html#precos">Preços</a>
+    <a href="../index.html#depoimentos">Depoimentos</a>
+    <a href="../index.html#faq">FAQ</a>
+    <a href="../index.html#glossario">Glossário</a>
+    <a href="../index.html#contato">Contato</a>
+    <a href="https://wa.me/5511987530304?text=Quero%20fazer%20uma%20aula%20experimental%20gratuita"
+      class="btn btn-primary mt-16" target="_blank" rel="noopener noreferrer"
+      aria-label="Agendar aula experimental gratuita">
+      Quero minha Aula Gratuita
+    </a>
+  </nav>
+
+  <main class="legal-page">
+    <header class="legal-hero" aria-labelledby="privacy-title">
+      <div class="container fade-up">
+        <span class="label">LGPD · Proteção de Dados</span>
+        <h1 id="privacy-title">Política de Privacidade</h1>
+        <p>Como a Giovana Borba Yoga coleta, usa, armazena e protege os dados pessoais de quem interage com aulas,
+          conteúdos e canais de atendimento.</p>
+        <span class="legal-updated">Última atualização: maio de 2026</span>
+      </div>
+    </header>
+
+    <section class="section section--cream" aria-label="Conteúdo da Política de Privacidade">
+      <div class="container legal-layout">
+        <aside class="legal-toc fade-up" aria-label="Índice da Política de Privacidade">
+          <h2>Índice</h2>
+          <ol>
+            <li><a href="#responsavel">Responsável pelos dados</a></li>
+            <li><a href="#dados">Dados coletados</a></li>
+            <li><a href="#uso">Uso dos dados</a></li>
+            <li><a href="#compartilhamento">Compartilhamento</a></li>
+            <li><a href="#retencao">Retenção</a></li>
+            <li><a href="#lgpd">Direitos LGPD</a></li>
+            <li><a href="#seguranca">Segurança</a></li>
+            <li><a href="#cookies">Cookies</a></li>
+            <li><a href="#menores">Menores de idade</a></li>
+            <li><a href="#alteracoes">Alterações</a></li>
+            <li><a href="#contato-privacidade">Contato</a></li>
+          </ol>
+        </aside>
+
+        <article class="legal-content legal-card fade-up">
+          <p>Esta Política de Privacidade descreve como Giovana Borba ("nós", "nossa" ou "professora") coleta, usa,
+            armazena e protege os dados pessoais das pessoas que interagem com nossos serviços de aulas de yoga online,
+            em conformidade com a <strong>Lei Geral de Proteção de Dados Pessoais (LGPD, Lei nº
+              13.709/2018)</strong>.</p>
+          <p>Ao entrar em contato conosco, se cadastrar para aulas ou participar de qualquer atividade oferecida, você
+            concorda com os termos desta política.</p>
+
+          <section id="responsavel">
+            <h2>1. Responsável pelo Tratamento dos Dados</h2>
+            <p><strong>Controladora:</strong> Giovana Borba</p>
+            <p><strong>Contato para questões de privacidade:</strong> <a href="https://wa.me/5511987530304"
+                target="_blank" rel="noopener noreferrer">WhatsApp +55 11 98753-0304</a></p>
+            <p><strong>Serviço:</strong> Aulas de yoga online ao vivo via Zoom, gravações disponíveis sob demanda</p>
+            <div class="legal-note">
+              <p>Os serviços são prestados de forma totalmente online. Não há endereço físico de atendimento.</p>
+            </div>
+          </section>
+
+          <section id="dados">
+            <h2>2. Quais Dados Coletamos</h2>
+            <p>Coletamos apenas os dados estritamente necessários para a prestação do serviço.</p>
+
+            <h3>2.1 Dados fornecidos diretamente por você</h3>
+            <ul>
+              <li><strong>Nome completo:</strong> para identificação e personalização do atendimento.</li>
+              <li><strong>Número de WhatsApp:</strong> para agendamento, comunicação sobre aulas e suporte.</li>
+              <li><strong>Outras informações que você nos enviar</strong> voluntariamente via WhatsApp, formulário de
+                contato ou Instagram Direct, como histórico de saúde relevante para a prática de yoga, quando
+                compartilhado por iniciativa própria.</li>
+            </ul>
+
+            <h3>2.2 Dados coletados automaticamente no site</h3>
+            <ul>
+              <li>Dados de navegação básicos, como cookies de funcionamento e análise, quando aplicável à plataforma
+                usada para hospedar o site.</li>
+              <li>Esses dados são anônimos e utilizados apenas para entender o desempenho do site.</li>
+            </ul>
+
+            <h3>2.3 Dados coletados via plataformas de terceiros</h3>
+            <ul>
+              <li><strong>Zoom:</strong> ao participar das aulas ao vivo, a plataforma Zoom pode coletar dados técnicos,
+                como IP, dispositivo e duração da conexão. Esses dados são regidos pela <a
+                  href="https://explore.zoom.us/pt/privacy/" target="_blank" rel="noopener noreferrer">Política de
+                  Privacidade do Zoom</a>.</li>
+              <li><strong>Hotmart:</strong> ao acessar as gravações das aulas, você utiliza a plataforma Hotmart, que
+                coleta dados de cadastro, como nome e e-mail, e dados de acesso necessários à criação da conta de membro.
+                O tratamento desses dados é regido pela <a href="https://hotmart.com/pt-BR/privacy-policy"
+                  target="_blank" rel="noopener noreferrer">Política de Privacidade da Hotmart</a>. A Hotmart também
+                pode atuar como processadora de pagamentos. Nesse caso, os dados de pagamento são tratados
+                exclusivamente por ela, sem acesso de Giovana Borba a dados de cartão ou dados financeiros completos.
+              </li>
+              <li><strong>Instagram / YouTube:</strong> interações nessas plataformas seguem as políticas de privacidade
+                do Meta e do Google, respectivamente.</li>
+            </ul>
+          </section>
+
+          <section id="uso">
+            <h2>3. Para Que Usamos Seus Dados</h2>
+            <p>Seus dados são utilizados exclusivamente para:</p>
+            <div class="legal-table-wrap">
+              <table class="legal-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Finalidade</th>
+                    <th scope="col">Base Legal (LGPD)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Agendamento e confirmação de aulas</td>
+                    <td>Execução de contrato (Art. 7º, V)</td>
+                  </tr>
+                  <tr>
+                    <td>Comunicação sobre horários, temas semanais e avisos</td>
+                    <td>Execução de contrato (Art. 7º, V)</td>
+                  </tr>
+                  <tr>
+                    <td>Envio de link do Zoom para as aulas</td>
+                    <td>Execução de contrato (Art. 7º, V)</td>
+                  </tr>
+                  <tr>
+                    <td>Responder dúvidas e oferecer suporte</td>
+                    <td>Legítimo interesse (Art. 7º, IX)</td>
+                  </tr>
+                  <tr>
+                    <td>Envio de informações sobre novos planos ou retiros Inspire Trip</td>
+                    <td>Legítimo interesse / Consentimento (Art. 7º, I e IX)</td>
+                  </tr>
+                  <tr>
+                    <td>Personalização da prática (considerações de saúde informadas)</td>
+                    <td>Consentimento explícito (Art. 7º, I)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Não usamos seus dados para:</h3>
+            <ul>
+              <li>Venda ou compartilhamento com terceiros para fins comerciais.</li>
+              <li>Marketing de empresas parceiras.</li>
+              <li>Criação de perfis automatizados para tomada de decisões.</li>
+            </ul>
+          </section>
+
+          <section id="compartilhamento">
+            <h2>4. Com Quem Compartilhamos Seus Dados</h2>
+            <p>Seus dados <strong>não são vendidos, alugados ou compartilhados comercialmente</strong> com terceiros.</p>
+            <p>Podemos compartilhar dados apenas nas seguintes situações:</p>
+            <ul>
+              <li><strong>Plataformas operacionais necessárias ao serviço:</strong> Zoom, para realização das aulas ao
+                vivo; Hotmart, para disponibilização das gravações, área de membros e processamento de pagamentos;
+                WhatsApp, para comunicação; e plataforma de hospedagem do site. Esses fornecedores são contratados para
+                viabilizar o serviço e atuam como operadores sob nossas instruções ou, no caso da Hotmart, como
+                controladores independentes para os dados que processam diretamente em sua plataforma.</li>
+              <li><strong>Obrigação legal:</strong> quando exigido por lei, ordem judicial ou autoridade competente.
+              </li>
+            </ul>
+          </section>
+
+          <section id="retencao">
+            <h2>5. Por Quanto Tempo Mantemos Seus Dados</h2>
+            <div class="legal-table-wrap">
+              <table class="legal-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Tipo de dado</th>
+                    <th scope="col">Prazo de retenção</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Dados de contato (nome + WhatsApp) de alunas ativas</td>
+                    <td>Enquanto durar a relação de serviço</td>
+                  </tr>
+                  <tr>
+                    <td>Dados de contato de alunas inativas</td>
+                    <td>Até 12 meses após o último contato</td>
+                  </tr>
+                  <tr>
+                    <td>Mensagens de WhatsApp e formulários</td>
+                    <td>Até 12 meses após o encerramento da relação</td>
+                  </tr>
+                  <tr>
+                    <td>Dados de saúde compartilhados voluntariamente</td>
+                    <td>Eliminados imediatamente ao encerramento do serviço, salvo solicitação diferente da aluna</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Após os prazos acima, os dados são excluídos ou anonimizados.</p>
+          </section>
+
+          <section id="lgpd">
+            <h2>6. Seus Direitos como Titular dos Dados</h2>
+            <p>A LGPD garante a você os seguintes direitos, que podem ser exercidos a qualquer momento pelo WhatsApp
+              <strong>+55 11 98753-0304</strong>:
+            </p>
+            <ul>
+              <li><strong>Acesso:</strong> saber quais dados temos sobre você.</li>
+              <li><strong>Correção:</strong> corrigir dados incompletos, inexatos ou desatualizados.</li>
+              <li><strong>Eliminação:</strong> solicitar a exclusão de dados tratados com base em consentimento.</li>
+              <li><strong>Portabilidade:</strong> receber seus dados em formato estruturado.</li>
+              <li><strong>Revogação do consentimento:</strong> retirar o consentimento a qualquer momento, sem prejuízo
+                das aulas já contratadas.</li>
+              <li><strong>Oposição:</strong> opor-se ao tratamento realizado com base em legítimo interesse.</li>
+              <li><strong>Informação sobre compartilhamento:</strong> saber com quais entidades seus dados são
+                compartilhados.</li>
+            </ul>
+            <p>Respondemos a solicitações de direitos em até <strong>15 dias úteis</strong>.</p>
+          </section>
+
+          <section id="seguranca">
+            <h2>7. Segurança dos Dados</h2>
+            <p>Adotamos as seguintes medidas para proteger seus dados:</p>
+            <ul>
+              <li>Comunicações realizadas por canais criptografados, como WhatsApp e Zoom.</li>
+              <li>Acesso aos dados restrito à professora Giovana Borba.</li>
+              <li>Dados não armazenados em planilhas públicas ou sistemas sem controle de acesso.</li>
+              <li>Gravações das aulas disponíveis apenas para alunas cadastradas, por link privado e temporário.</li>
+            </ul>
+            <p>Em caso de incidente de segurança que possa causar risco ou dano a você, comunicaremos dentro do prazo
+              exigido pela LGPD e pelas orientações da ANPD.</p>
+          </section>
+
+          <section id="cookies">
+            <h2>8. Cookies e Tecnologias de Rastreamento</h2>
+            <p>O site pode usar cookies básicos de funcionamento e análise de desempenho, como Google Analytics. Você
+              pode desativá-los nas configurações do seu navegador a qualquer momento, sem prejuízo ao acesso ao
+              conteúdo.</p>
+            <p>Não utilizamos cookies para publicidade comportamental ou rastreamento entre sites.</p>
+          </section>
+
+          <section id="menores">
+            <h2>9. Menores de Idade</h2>
+            <p>Nossos serviços são destinados a adultos (maiores de 18 anos). Não coletamos intencionalmente dados de
+              menores. Se tomarmos conhecimento de dados de menores coletados sem consentimento dos responsáveis,
+              procederemos à exclusão imediata.</p>
+          </section>
+
+          <section id="alteracoes">
+            <h2>10. Alterações nesta Política</h2>
+            <p>Esta política pode ser atualizada periodicamente para refletir mudanças no serviço ou na legislação. A
+              data de "última atualização" no topo do documento indica a versão vigente. Em caso de alterações
+              relevantes, comunicaremos as alunas ativas pelo WhatsApp.</p>
+          </section>
+
+          <section id="contato-privacidade">
+            <h2>11. Contato e Canal de Privacidade</h2>
+            <p>Para qualquer questão relacionada a esta Política de Privacidade ou ao exercício dos seus direitos:</p>
+            <div class="legal-contact">
+              <a href="https://wa.me/5511987530304" target="_blank" rel="noopener noreferrer">WhatsApp: +55 11
+                98753-0304</a>
+              <a href="https://instagram.com/giovanaborba" target="_blank" rel="noopener noreferrer">Instagram:
+                @giovanaborba</a>
+            </div>
+            <div class="legal-note">
+              <p>Esta política foi elaborada em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD, Lei nº
+                13.709/2018) e as orientações da Autoridade Nacional de Proteção de Dados (ANPD).</p>
+            </div>
+            <p><em>Recomendamos que esta política seja revisada periodicamente por profissional jurídico especializado
+                em proteção de dados, especialmente em caso de expansão dos serviços.</em></p>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" role="contentinfo" aria-label="Rodapé do site Gi Borba Yoga">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="../images/Logo Branco Sem Fundo.png" alt="Logo Gi Borba Yoga — branco" height="40" loading="lazy">
+          <p>Professora de Hatha Yoga · Vinyasa · SwáSthya · Yoga Somático · Yoga Restaurativo · Acroyoga<br>Criadora
+            do Inspire Trip | Brasil</p>
+          <div class="footer-social" role="list" aria-label="Redes sociais de Gi Borba">
+            <a href="https://wa.me/5511987530304" target="_blank" rel="noopener noreferrer" role="listitem"
+              aria-label="WhatsApp de Gi Borba"><img src="../images/logo-whatsapp.png" alt="WhatsApp"
+                class="social-logo"></a>
+            <a href="https://instagram.com/giovanaborba" target="_blank" rel="noopener noreferrer" role="listitem"
+              aria-label="Instagram de Gi Borba"><img src="../images/logo-intagram.png" alt="Instagram"
+                class="social-logo"></a>
+            <a href="https://www.youtube.com/user/giovanaborba1/" target="_blank" rel="noopener noreferrer"
+              role="listitem" aria-label="YouTube de Gi Borba"><img src="../images/logo-youtube.png" alt="YouTube"
+                class="social-logo"></a>
+          </div>
+        </div>
+
+        <nav aria-label="Links rápidos do site">
+          <p class="footer-links-title">Navegação</p>
+          <ul class="footer-links-list" role="list">
+            <li><a href="../index.html#sobre">Sobre a Gi</a></li>
+            <li><a href="../index.html#modalidades">Modalidades</a></li>
+            <li><a href="../index.html#precos">Preços</a></li>
+            <li><a href="../index.html#depoimentos">Depoimentos</a></li>
+            <li><a href="../index.html#faq">FAQ</a></li>
+            <li><a href="../index.html#glossario">Glossário</a></li>
+            <li><a href="../index.html#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Links legais e informativos">
+          <p class="footer-links-title">Legal</p>
+          <ul class="footer-links-list" role="list">
+            <li><a href="../politica-de-privacidade/politica-de-privacidade.html">Política de Privacidade</a></li>
+            <li><a href="../termos-de-uso/termos-de-uso.html">Termos de Uso</a></li>
+            <li><a href="../politica-de-privacidade/politica-de-privacidade.html#lgpd">LGPD — Proteção de Dados</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-divider" role="separator" aria-hidden="true"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-legal">
+          Este site respeita a Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018). As aulas são realizadas online
+          via Zoom. Seus dados de contato são utilizados exclusivamente para agendamento e comunicação com a professora,
+          e nunca serão compartilhados com terceiros sem seu consentimento explícito.
+          <a href="../politica-de-privacidade/politica-de-privacidade.html">Política de Privacidade</a> |
+          <a href="../termos-de-uso/termos-de-uso.html">Termos de Uso</a>
+        </p>
+        <p class="footer-copyright">© 2026 Giovana Borba. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a id="whatsapp-float" href="https://wa.me/5511987530304?text=Quero%20fazer%20uma%20aula%20experimental%20gratuita"
+    target="_blank" rel="noopener noreferrer" aria-label="Falar com Gi Borba pelo WhatsApp — Agendar aula gratuita"
+    title="Falar no WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+    <span class="wa-tooltip" aria-hidden="true">Falar no WhatsApp</span>
+  </a>
+
+  <script src="../main.js"></script>
+</body>
+
+</html>
