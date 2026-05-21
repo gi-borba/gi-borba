@@ -459,7 +459,8 @@ p + p { margin-top: 16px; }
 .modal-card-body { padding: 28px 28px 24px; display: flex; flex-direction: column; flex: 1; }
 .modal-card h4 { font-family: var(--font-display); font-size: 22px; font-weight: 500; margin-bottom: 12px; }
 .modal-card p { font-size: 15px; }
-.modal-card-cta { margin-top: auto; padding-top: 20px; font-size: 12px; color: var(--taupe-dark); letter-spacing: .08em; }
+.modal-card-cta { margin-top: auto; padding-top: 20px; font-size: 12px; color: var(--taupe-dark); letter-spacing: .08em; text-decoration: none; display: inline-block; transition: color var(--transition); }
+.modal-card-cta:hover { color: var(--olive); }
 
 /* ─────────────────────────────────────────
    BÔNUS
