@@ -1,7 +1,6 @@
 // ─── TYPES ───────────────────────────────────────────────
-interface CarouselState {
+interface VideoShowcaseState {
   current: number;
-  total: number;
   autoInterval: ReturnType<typeof setInterval> | null;
 }
 
@@ -87,82 +86,135 @@ function initGlossario(): void {
   });
 }
 
-// ─── VIDEO CAROUSEL ───────────────────────────────────────
-function initCarousel(): void {
-  const state: CarouselState = { current: 0, total: 4, autoInterval: null };
-  const items = document.querySelectorAll<HTMLElement>('.depo-video-item');
-  const dots = document.querySelectorAll<HTMLElement>('.depo-dot');
-  const prevBtn = document.querySelector<HTMLButtonElement>('.carousel-btn.prev');
-  const nextBtn = document.querySelector<HTMLButtonElement>('.carousel-btn.next');
+// ─── VIDEO SHOWCASE ───────────────────────────────────────
+function initVideoShowcase(): void {
+  const showcase = document.querySelector<HTMLElement>('.depo-video-showcase');
+  if (!showcase) return;
 
-  if (!items.length) return;
+  const player = showcase.querySelector<HTMLElement>('.depo-showcase-player');
+  const video = showcase.querySelector<HTMLVideoElement>('#depo-showcase-video');
+  const toggle = showcase.querySelector<HTMLButtonElement>('.depo-showcase-toggle');
+  const thumbs = Array.from(showcase.querySelectorAll<HTMLButtonElement>('.depo-showcase-thumb'));
+  const state: VideoShowcaseState = { current: 0, autoInterval: null };
 
-  function getOrder(idx: number, cur: number, total: number): number {
-    return ((idx - cur) % total + total) % total;
+  if (!player || !video || !toggle || !thumbs.length) return;
+
+  function stopAuto(): void {
+    if (state.autoInterval) clearInterval(state.autoInterval);
+    state.autoInterval = null;
   }
 
-  function render(): void {
-    items.forEach((item, i) => {
-      const order = getOrder(i, state.current, state.total);
-      item.classList.remove('main', 'side', 'hidden-item');
-      if (order === 0) item.classList.add('main');
-      else if (order === 1 || order === state.total - 1) item.classList.add('side');
-      else { item.classList.add('hidden-item'); (item as HTMLElement).style.display = 'none'; return; }
-      (item as HTMLElement).style.display = '';
+  function startAuto(): void {
+    stopAuto();
+    if (!video.paused) return;
+    state.autoInterval = setInterval(() => {
+      selectVideo((state.current + 1) % thumbs.length, false);
+    }, 4000);
+  }
+
+  function updatePlaying(isPlaying: boolean): void {
+    player.classList.toggle('playing', isPlaying);
+    video.controls = isPlaying;
+    toggle.disabled = isPlaying;
+    toggle.setAttribute('aria-hidden', String(isPlaying));
+    toggle.setAttribute('aria-label', 'Reproduzir depoimento em vídeo');
+  }
+
+  function selectVideo(index: number, shouldResetAuto: boolean): void {
+    const thumb = thumbs[index];
+    if (!thumb) return;
+
+    const src = thumb.dataset.videoSrc || '';
+    const poster = thumb.dataset.poster || '';
+    const label = thumb.dataset.label || thumb.getAttribute('aria-label') || 'Depoimento em vídeo';
+    const wasPlaying = !video.paused;
+
+    if (wasPlaying) video.pause();
+    state.current = index;
+
+    if (poster) video.setAttribute('poster', poster);
+    video.setAttribute('aria-label', label);
+    if (video.getAttribute('src') !== src) {
+      video.setAttribute('src', src);
+      video.load();
+    }
+
+    thumbs.forEach((item, i) => {
+      item.classList.toggle('active', i === index);
+      item.setAttribute('aria-selected', String(i === index));
     });
-    dots.forEach((d, i) => d.classList.toggle('active', i === state.current));
+
+    updatePlaying(false);
+    if (shouldResetAuto) startAuto();
   }
 
-  function next(): void {
-    state.current = (state.current + 1) % state.total;
-    render();
-  }
-  function prev(): void {
-    state.current = (state.current - 1 + state.total) % state.total;
-    render();
-  }
-
-  prevBtn?.addEventListener('click', prev);
-  nextBtn?.addEventListener('click', next);
-  dots.forEach((d, i) => d.addEventListener('click', () => { state.current = i; render(); }));
-
-  items.forEach(item => {
-    item.addEventListener('click', () => {
-      if (!item.classList.contains('main')) {
-        const idx = Array.from(items).indexOf(item);
-        state.current = idx;
-        render();
-      } else {
-        const video = item.querySelector('video');
-        const overlay = item.querySelector<HTMLElement>('.depo-video-overlay');
-        if (video && overlay) {
-          if (video.paused) { video.play(); overlay.style.opacity = '0'; }
-          else { video.pause(); overlay.style.opacity = '1'; }
-        }
+  function togglePlayback(): void {
+    if (!video.paused) return;
+    if (video.paused) {
+      if (!video.getAttribute('src')) selectVideo(state.current, false);
+      document.querySelectorAll<HTMLVideoElement>('video').forEach(v => {
+        if (v !== video && !v.paused) v.pause();
+      });
+      const playPromise = video.play();
+      if (playPromise && typeof playPromise.catch === 'function') {
+        playPromise.catch(() => {
+          updatePlaying(false);
+          startAuto();
+        });
       }
-    });
+    }
+    toggle.blur();
+  }
+
+  thumbs.forEach((thumb, index) => {
+    thumb.addEventListener('click', () => selectVideo(index, true));
   });
 
-  state.autoInterval = setInterval(next, 5000);
-  const track = document.querySelector('.depo-carousel');
-  track?.addEventListener('mouseenter', () => { if (state.autoInterval) clearInterval(state.autoInterval); });
-  track?.addEventListener('mouseleave', () => { state.autoInterval = setInterval(next, 5000); });
+  toggle.addEventListener('click', togglePlayback);
+  video.addEventListener('play', () => {
+    stopAuto();
+    updatePlaying(true);
+  });
+  video.addEventListener('pause', () => {
+    updatePlaying(false);
+    startAuto();
+  });
+  video.addEventListener('ended', () => {
+    updatePlaying(false);
+    startAuto();
+  });
 
-  render();
+  selectVideo(0, false);
+  startAuto();
 }
 
 // ─── VSL PLAYER ───────────────────────────────────────────
 function initVsl(): void {
-  const playBtn = document.getElementById('vsl-play') as HTMLElement;
+  const playBtn = document.getElementById('vsl-play') as HTMLButtonElement;
   const video = document.getElementById('vsl-video') as HTMLVideoElement;
 
   if (!playBtn || !video) return;
+
+  function setPlaying(isPlaying: boolean): void {
+    playBtn.classList.toggle('playing', isPlaying);
+    video.controls = isPlaying;
+    playBtn.disabled = isPlaying;
+    playBtn.setAttribute('aria-hidden', String(isPlaying));
+    playBtn.setAttribute('aria-label', 'Reproduzir vídeo');
+  }
+
   playBtn.addEventListener('click', () => {
+    if (!video.paused) return;
+    document.querySelectorAll<HTMLVideoElement>('video').forEach(v => {
+      if (v !== video && !v.paused) v.pause();
+    });
     video.play();
-    playBtn.classList.add('hidden');
+    playBtn.blur();
   });
-  video.addEventListener('pause', () => playBtn.classList.remove('hidden'));
-  video.addEventListener('ended', () => playBtn.classList.remove('hidden'));
+
+  video.addEventListener('play', () => setPlaying(true));
+  video.addEventListener('pause', () => setPlaying(false));
+  video.addEventListener('ended', () => setPlaying(false));
 }
 
 // ─── CONTACT FORM ─────────────────────────────────────────
@@ -208,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initFaq();
   initGlossario();
-  initCarousel();
+  initVideoShowcase();
   initVsl();
   initForm();
   initScrollAnimations();

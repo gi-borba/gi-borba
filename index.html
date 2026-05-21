@@ -215,11 +215,6 @@
             <circle cx="12" cy="12" r="11" fill="rgba(62,45,28,0.45)" stroke="none" />
             <polygon points="10,8 18,12 10,16" fill="white" />
           </svg>
-          <svg class="vsl-icon-pause" width="64" height="64" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="11" fill="rgba(62,45,28,0.45)" stroke="none" />
-            <rect x="8" y="7" width="3" height="10" fill="white" rx="1" />
-            <rect x="13" y="7" width="3" height="10" fill="white" rx="1" />
-          </svg>
         </button>
       </div>
     </div>
@@ -925,95 +920,56 @@
         <div class="text-depo-dots" role="tablist" aria-label="Selecionar depoimento escrito"></div>
       </div>
 
-      <!-- Video carousel -->
+      <!-- Video showcase -->
       <div class="depo-carousel-section fade-up">
         <h3>Depoimentos em <span class="highlight">vídeo</span></h3>
 
-        <div class="depo-carousel" role="region" aria-label="Carrossel de vídeos de depoimentos"
-          aria-roledescription="carrossel">
+        <div class="depo-video-showcase" role="region" aria-label="Showcase de vídeos de depoimentos">
+          <div class="depo-showcase-player">
+            <video id="depo-showcase-video" class="depo-showcase-video" preload="none" playsinline
+              poster="images/depoimento-video-1.webp"
+              aria-label="Depoimento em vídeo 1 de 4 - Gi Borba Yoga">
+              <p>Seu navegador não suporta vídeo HTML5.</p>
+            </video>
 
-          <button class="carousel-btn prev" id="carousel-prev" aria-label="Depoimento anterior"
-            aria-controls="depo-track">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              aria-hidden="true">
-              <polyline points="15 18 9 12 15 6" />
-            </svg>
-          </button>
-
-          <div id="depo-track" class="depo-track" aria-live="polite">
-            <div class="depo-video-item main" data-index="0" role="group" aria-roledescription="slide"
-              aria-label="Depoimento em vídeo 1 de 4">
-              <div class="thumb-ratio">
-                <video preload="none" playsinline muted loop aria-label="Vídeo de depoimento de aluna — Gi Borba Yoga">
-                  <source src="videos/gi-borba-depoimento-1.mp4" type="video/mp4">
-                </video>
-                <div class="depo-video-overlay" aria-hidden="true">
-                  <svg class="depo-play-icon" width="52" height="52" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.85)" />
-                    <polygon points="10,8 17,12 10,16" fill="var(--brown-dark)" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="depo-video-item side" data-index="1" role="group" aria-roledescription="slide"
-              aria-label="Depoimento em vídeo 2 de 4">
-              <div class="thumb-ratio">
-                <video preload="none" playsinline muted aria-label="Vídeo de depoimento de aluna 2 — Gi Borba Yoga">
-                  <source src="videos/gi-borba-depoimento-2.mp4" type="video/mp4">
-                </video>
-                <div class="depo-video-overlay" aria-hidden="true">
-                  <svg class="depo-play-icon" width="40" height="40" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.85)" />
-                    <polygon points="10,8 17,12 10,16" fill="var(--brown-dark)" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="depo-video-item side" data-index="2" role="group" aria-roledescription="slide"
-              aria-label="Depoimento em vídeo 3 de 4">
-              <div class="thumb-ratio">
-                <video preload="none" playsinline muted aria-label="Vídeo de depoimento de aluna 3 — Gi Borba Yoga">
-                  <source src="videos/gi-borba-depoimento-3.mp4" type="video/mp4">
-                </video>
-                <div class="depo-video-overlay" aria-hidden="true">
-                  <svg class="depo-play-icon" width="40" height="40" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.85)" />
-                    <polygon points="10,8 17,12 10,16" fill="var(--brown-dark)" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="depo-video-item" data-index="3" style="display:none" role="group" aria-roledescription="slide"
-              aria-label="Depoimento em vídeo 4 de 4">
-              <div class="thumb-ratio">
-                <video preload="none" playsinline muted aria-label="Vídeo de depoimento de aluna 4 — Gi Borba Yoga">
-                  <source src="videos/gi-borba-depoimento-4.mp4" type="video/mp4">
-                </video>
-                <div class="depo-video-overlay" aria-hidden="true">
-                  <svg class="depo-play-icon" width="40" height="40" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.85)" />
-                    <polygon points="10,8 17,12 10,16" fill="var(--brown-dark)" />
-                  </svg>
-                </div>
-              </div>
-            </div>
+            <button class="depo-showcase-toggle" type="button" aria-label="Reproduzir depoimento em vídeo">
+              <svg class="depo-showcase-play" width="64" height="64" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="11" fill="rgba(255,255,255,0.88)" />
+                <polygon points="10,8 18,12 10,16" fill="var(--brown-dark)" />
+              </svg>
+            </button>
           </div>
 
-          <button class="carousel-btn next" id="carousel-next" aria-label="Próximo depoimento"
-            aria-controls="depo-track">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              aria-hidden="true">
-              <polyline points="9 18 15 12 9 6" />
-            </svg>
-          </button>
-        </div>
-
-        <div class="depo-nav" role="tablist" aria-label="Navegação do carrossel">
-          <button class="depo-dot active" role="tab" aria-selected="true" aria-label="Depoimento 1"
-            data-index="0"></button>
-          <button class="depo-dot" role="tab" aria-selected="false" aria-label="Depoimento 2" data-index="1"></button>
-          <button class="depo-dot" role="tab" aria-selected="false" aria-label="Depoimento 3" data-index="2"></button>
-          <button class="depo-dot" role="tab" aria-selected="false" aria-label="Depoimento 4" data-index="3"></button>
+          <div class="depo-showcase-thumbs" role="tablist" aria-label="Selecionar depoimento em vídeo">
+            <button class="depo-showcase-thumb active" type="button" role="tab" aria-selected="true"
+              aria-label="Selecionar depoimento em vídeo 1" data-index="0"
+              data-video-src="videos/gi-borba-depoimento-1.mp4" data-poster="images/depoimento-video-1.webp"
+              data-label="Depoimento em vídeo 1 de 4 - Gi Borba Yoga">
+              <img src="images/depoimento-video-1.webp" alt="" loading="lazy" decoding="async">
+              <span class="depo-thumb-play" aria-hidden="true"></span>
+            </button>
+            <button class="depo-showcase-thumb" type="button" role="tab" aria-selected="false"
+              aria-label="Selecionar depoimento em vídeo 2" data-index="1"
+              data-video-src="videos/gi-borba-depoimento-2.mp4" data-poster="images/depoimento-video-2.webp"
+              data-label="Depoimento em vídeo 2 de 4 - Gi Borba Yoga">
+              <img src="images/depoimento-video-2.webp" alt="" loading="lazy" decoding="async">
+              <span class="depo-thumb-play" aria-hidden="true"></span>
+            </button>
+            <button class="depo-showcase-thumb" type="button" role="tab" aria-selected="false"
+              aria-label="Selecionar depoimento em vídeo 3" data-index="2"
+              data-video-src="videos/gi-borba-depoimento-3.mp4" data-poster="images/depoimento-video-3.webp"
+              data-label="Depoimento em vídeo 3 de 4 - Gi Borba Yoga">
+              <img src="images/depoimento-video-3.webp" alt="" loading="lazy" decoding="async">
+              <span class="depo-thumb-play" aria-hidden="true"></span>
+            </button>
+            <button class="depo-showcase-thumb" type="button" role="tab" aria-selected="false"
+              aria-label="Selecionar depoimento em vídeo 4" data-index="3"
+              data-video-src="videos/gi-borba-depoimento-4.mp4" data-poster="images/depoimento-video-4.webp"
+              data-label="Depoimento em vídeo 4 de 4 - Gi Borba Yoga">
+              <img src="images/depoimento-video-4.webp" alt="" loading="lazy" decoding="async">
+              <span class="depo-thumb-play" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
       </div>
     </div>

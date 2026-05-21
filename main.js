@@ -276,101 +276,109 @@ function initTextTestimonials() {
   startAuto();
 }
 
-// ─── VIDEO CAROUSEL ───────────────────────────────────────
-function initCarousel() {
-  var state = { current: 0, total: 4, autoInterval: null };
-  var items = Array.from(document.querySelectorAll('.depo-video-item'));
-  var dots = document.querySelectorAll('.depo-dot');
-  var prevBtn = document.querySelector('.carousel-btn.prev');
-  var nextBtn = document.querySelector('.carousel-btn.next');
+// ─── VIDEO SHOWCASE ───────────────────────────────────────
+function initVideoShowcase() {
+  var showcase = document.querySelector('.depo-video-showcase');
+  if (!showcase) return;
 
-  if (!items.length) return;
+  var player = showcase.querySelector('.depo-showcase-player');
+  var video = showcase.querySelector('#depo-showcase-video');
+  var toggle = showcase.querySelector('.depo-showcase-toggle');
+  var thumbs = Array.from(showcase.querySelectorAll('.depo-showcase-thumb'));
+  var state = { current: 0, autoInterval: null };
 
-  function getOrder(idx, cur, total) {
-    return ((idx - cur) % total + total) % total;
+  if (!player || !video || !toggle || !thumbs.length) return;
+
+  function stopAuto() {
+    if (state.autoInterval) clearInterval(state.autoInterval);
+    state.autoInterval = null;
   }
 
-  function pauseCurrentMainVideo() {
-    var mainItem = items.find(function (it) { return it.classList.contains('main'); });
-    if (!mainItem) return;
-    var v = mainItem.querySelector('video');
-    if (v && !v.paused) {
-      v.pause();
-      setCarouselOverlayState(mainItem, false);
-    }
+  function startAuto() {
+    stopAuto();
+    if (!video.paused) return;
+    state.autoInterval = setInterval(function () {
+      selectVideo((state.current + 1) % thumbs.length, false);
+    }, 4000);
   }
 
-  function render() {
-    pauseCurrentMainVideo();
-    items.forEach(function (item, i) {
-      var order = getOrder(i, state.current, state.total);
-      item.classList.remove('main', 'side', 'hidden-item');
-      if (order === 0) {
-        item.classList.add('main');
-        item.style.display = '';
-      } else if (order === 1 || order === state.total - 1) {
-        item.classList.add('side');
-        item.style.display = '';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-    dots.forEach(function (d, i) {
-      d.classList.toggle('active', i === state.current);
-      d.setAttribute('aria-selected', String(i === state.current));
-    });
+  function updatePlaying(isPlaying) {
+    player.classList.toggle('playing', isPlaying);
+    video.controls = isPlaying;
+    toggle.disabled = isPlaying;
+    toggle.setAttribute('aria-hidden', String(isPlaying));
+    toggle.setAttribute('aria-label', 'Reproduzir depoimento em vídeo');
   }
 
-  function next() { state.current = (state.current + 1) % state.total; render(); }
-  function prev() { state.current = (state.current - 1 + state.total) % state.total; render(); }
+  function selectVideo(index, shouldResetAuto) {
+    var thumb = thumbs[index];
+    if (!thumb) return;
 
-  if (prevBtn) prevBtn.addEventListener('click', prev);
-  if (nextBtn) nextBtn.addEventListener('click', next);
+    var src = thumb.dataset.videoSrc || '';
+    var poster = thumb.dataset.poster || '';
+    var label = thumb.dataset.label || thumb.getAttribute('aria-label') || 'Depoimento em vídeo';
+    var wasPlaying = !video.paused;
 
-  dots.forEach(function (d, i) {
-    d.addEventListener('click', function () { state.current = i; render(); });
-  });
+    if (wasPlaying) video.pause();
+    state.current = index;
 
-  items.forEach(function (item) {
-    var video = item.querySelector('video');
-
-    // Sync overlay whenever video is paused externally (e.g. pauseAllExcept)
-    if (video) {
-      video.addEventListener('pause', function () {
-        setCarouselOverlayState(item, false);
-      });
-      video.addEventListener('ended', function () {
-        setCarouselOverlayState(item, false);
-      });
+    if (poster) video.setAttribute('poster', poster);
+    video.setAttribute('aria-label', label);
+    if (video.getAttribute('src') !== src) {
+      video.setAttribute('src', src);
+      video.load();
     }
 
-    item.addEventListener('click', function () {
-      if (!item.classList.contains('main')) {
-        state.current = items.indexOf(item);
-        render();
-      } else {
-        var v = item.querySelector('video');
-        if (!v) return;
-        if (v.paused) {
-          pauseAllExcept(v);
-          v.play();
-          setCarouselOverlayState(item, true);
-        } else {
-          v.pause();
-          setCarouselOverlayState(item, false);
-        }
+    thumbs.forEach(function (item, i) {
+      item.classList.toggle('active', i === index);
+      item.setAttribute('aria-selected', String(i === index));
+    });
+
+    updatePlaying(false);
+    if (shouldResetAuto) startAuto();
+  }
+
+  function togglePlayback() {
+    if (!video.paused) return;
+    if (video.paused) {
+      var activeThumb = thumbs[state.current];
+      if (activeThumb && !video.getAttribute('src')) {
+        selectVideo(state.current, false);
       }
+      pauseAllExcept(video);
+      var playPromise = video.play();
+      if (playPromise && typeof playPromise.catch === 'function') {
+        playPromise.catch(function () {
+          updatePlaying(false);
+          startAuto();
+        });
+      }
+    }
+    toggle.blur();
+  }
+
+  thumbs.forEach(function (thumb, index) {
+    thumb.addEventListener('click', function () {
+      selectVideo(index, true);
     });
   });
 
-  state.autoInterval = setInterval(next, 5000);
-  var carousel = document.querySelector('.depo-carousel');
-  if (carousel) {
-    carousel.addEventListener('mouseenter', function () { clearInterval(state.autoInterval); });
-    carousel.addEventListener('mouseleave', function () { state.autoInterval = setInterval(next, 5000); });
-  }
+  toggle.addEventListener('click', togglePlayback);
+  video.addEventListener('play', function () {
+    stopAuto();
+    updatePlaying(true);
+  });
+  video.addEventListener('pause', function () {
+    updatePlaying(false);
+    startAuto();
+  });
+  video.addEventListener('ended', function () {
+    updatePlaying(false);
+    startAuto();
+  });
 
-  render();
+  selectVideo(0, false);
+  startAuto();
 }
 
 // ─── VSL PLAYER ───────────────────────────────────────────
@@ -381,20 +389,22 @@ function initVsl() {
 
   function setPlaying(isPlaying) {
     playBtn.classList.toggle('playing', isPlaying);
-    playBtn.setAttribute('aria-label', isPlaying ? 'Pausar vídeo' : 'Reproduzir vídeo');
+    video.controls = isPlaying;
+    playBtn.disabled = isPlaying;
+    playBtn.setAttribute('aria-hidden', String(isPlaying));
+    playBtn.setAttribute('aria-label', 'Reproduzir vídeo');
   }
 
   playBtn.addEventListener('click', function () {
+    if (!video.paused) return;
     if (video.paused) {
       pauseAllExcept(video);
       video.play();
-      setPlaying(true);
-    } else {
-      video.pause();
-      setPlaying(false);
     }
+    playBtn.blur();
   });
 
+  video.addEventListener('play', function () { setPlaying(true); });
   video.addEventListener('pause', function () { setPlaying(false); });
   video.addEventListener('ended', function () { setPlaying(false); });
 }
@@ -462,7 +472,7 @@ document.addEventListener('DOMContentLoaded', function () {
   try { initFaq(); } catch(e) { console.error('initFaq', e); }
   try { initGlossario(); } catch(e) { console.error('initGlossario', e); }
   try { initTextTestimonials(); } catch(e) { console.error('initTextTestimonials', e); }
-  try { initCarousel(); } catch(e) { console.error('initCarousel', e); }
+  try { initVideoShowcase(); } catch(e) { console.error('initVideoShowcase', e); }
   try { initVsl(); } catch(e) { console.error('initVsl', e); }
   try { initForm(); } catch(e) { console.error('initForm', e); }
   try { initScrollAnimations(); } catch(e) { console.error('initScrollAnimations', e); }
