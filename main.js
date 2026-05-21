@@ -135,6 +135,147 @@ function initGlossario() {
   });
 }
 
+// ─── TEXT TESTIMONIALS CAROUSEL ──────────────────────────
+function initTextTestimonials() {
+  var carousel = document.querySelector('.text-depo-carousel');
+  if (!carousel) return;
+
+  var track = carousel.querySelector('.depo-quotes');
+  var items = Array.from(carousel.querySelectorAll('.depo-quote'));
+  var prevBtn = carousel.querySelector('.text-depo-btn.prev');
+  var nextBtn = carousel.querySelector('.text-depo-btn.next');
+  var dotsWrap = carousel.querySelector('.text-depo-dots');
+  var state = { page: 0, perPage: 1, pages: 1, autoInterval: null, programmaticScroll: false };
+
+  if (!track || !items.length || !prevBtn || !nextBtn || !dotsWrap) return;
+
+  function getGap() {
+    var styles = window.getComputedStyle(track);
+    return parseFloat(styles.columnGap || styles.gap) || 0;
+  }
+
+  function measure() {
+    var itemWidth = items[0].getBoundingClientRect().width;
+    var trackWidth = track.getBoundingClientRect().width;
+    var gap = getGap();
+    state.perPage = Math.max(1, Math.floor((trackWidth + gap) / (itemWidth + gap)));
+    state.pages = Math.max(1, Math.ceil(items.length / state.perPage));
+    state.page = Math.min(state.page, state.pages - 1);
+  }
+
+  function buildDots() {
+    dotsWrap.innerHTML = '';
+    for (var i = 0; i < state.pages; i++) {
+      var dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'text-depo-dot';
+      dot.setAttribute('aria-label', 'Mostrar grupo de depoimentos ' + (i + 1));
+      dot.dataset.page = String(i);
+      dot.addEventListener('click', function () {
+        goToPage(Number(this.dataset.page));
+        restartAuto();
+      });
+      dotsWrap.appendChild(dot);
+    }
+  }
+
+  function updateControls() {
+    var dots = dotsWrap.querySelectorAll('.text-depo-dot');
+    dots.forEach(function (dot, index) {
+      var active = index === state.page;
+      dot.classList.toggle('active', active);
+      dot.setAttribute('aria-selected', String(active));
+    });
+    prevBtn.disabled = state.pages <= 1;
+    nextBtn.disabled = state.pages <= 1;
+  }
+
+  function goToPage(page) {
+    var previousPage = state.page;
+    var requestedPage = page;
+    if (state.pages <= 1) {
+      state.page = 0;
+    } else if (page < 0) {
+      state.page = state.pages - 1;
+    } else if (page >= state.pages) {
+      state.page = 0;
+    } else {
+      state.page = page;
+    }
+    var itemWidth = items[0].getBoundingClientRect().width;
+    var targetLeft = (itemWidth + getGap()) * state.perPage * state.page;
+    var isLoopJump = requestedPage < 0 || requestedPage >= state.pages;
+    var isLongJump = Math.abs(state.page - previousPage) > 1;
+    var behavior = isLoopJump || isLongJump ? 'auto' : 'smooth';
+    state.programmaticScroll = true;
+    track.scrollTo({ left: targetLeft, behavior: behavior });
+    updateControls();
+    setTimeout(function () {
+      state.programmaticScroll = false;
+      updateControls();
+    }, 900);
+  }
+
+  function syncFromScroll() {
+    if (state.programmaticScroll) return;
+    var itemWidth = items[0].getBoundingClientRect().width;
+    var pageWidth = (itemWidth + getGap()) * state.perPage;
+    state.page = Math.max(0, Math.min(state.pages - 1, Math.round(track.scrollLeft / pageWidth)));
+    updateControls();
+  }
+
+  function stopAuto() {
+    if (state.autoInterval) clearInterval(state.autoInterval);
+    state.autoInterval = null;
+  }
+
+  function startAuto() {
+    stopAuto();
+    if (state.pages <= 1) return;
+    state.autoInterval = setInterval(function () {
+      goToPage(state.page + 1);
+    }, 4000);
+  }
+
+  function restartAuto() {
+    stopAuto();
+    startAuto();
+  }
+
+  var scrollTimer;
+  track.addEventListener('scroll', function () {
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(syncFromScroll, 80);
+  }, { passive: true });
+
+  prevBtn.addEventListener('click', function () {
+    goToPage(state.page - 1);
+    restartAuto();
+  });
+  nextBtn.addEventListener('click', function () {
+    goToPage(state.page + 1);
+    restartAuto();
+  });
+  carousel.addEventListener('mouseenter', stopAuto);
+  carousel.addEventListener('mouseleave', startAuto);
+  carousel.addEventListener('focusin', stopAuto);
+  carousel.addEventListener('focusout', startAuto);
+
+  window.addEventListener('resize', function () {
+    var currentFirst = state.page * state.perPage;
+    measure();
+    state.page = Math.min(state.pages - 1, Math.floor(currentFirst / state.perPage));
+    buildDots();
+    goToPage(state.page);
+    startAuto();
+  });
+
+  measure();
+  buildDots();
+  updateControls();
+  startAuto();
+}
+
 // ─── VIDEO CAROUSEL ───────────────────────────────────────
 function initCarousel() {
   var state = { current: 0, total: 4, autoInterval: null };
@@ -320,6 +461,7 @@ document.addEventListener('DOMContentLoaded', function () {
   try { initNav(); } catch(e) { console.error('initNav', e); }
   try { initFaq(); } catch(e) { console.error('initFaq', e); }
   try { initGlossario(); } catch(e) { console.error('initGlossario', e); }
+  try { initTextTestimonials(); } catch(e) { console.error('initTextTestimonials', e); }
   try { initCarousel(); } catch(e) { console.error('initCarousel', e); }
   try { initVsl(); } catch(e) { console.error('initVsl', e); }
   try { initForm(); } catch(e) { console.error('initForm', e); }
