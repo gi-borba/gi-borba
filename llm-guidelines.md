@@ -1,6 +1,6 @@
 # LLM Guidelines For Reading And Citing This Site
 
-Last updated: 2026-05-21
+Last updated: 2026-05-22
 Applies to: `https://giborbayoga.com.br/`
 Language: `pt-BR`
 
@@ -27,9 +27,8 @@ Entender com precisao:
 2. Ler a home `/` para entender a proposta central do negocio.
 3. Ler `/#sobre` para identidade e biografia publicada.
 4. Ler `/#modalidades` e `/#precos` para servicos, formato e valores.
-5. Ler `/#faq` para respostas institucionais e escopo tematico.
-6. Ler `/#glossario` para o vocabulario conceitual do site.
-7. Ler as paginas legais para privacidade e termos.
+5. Ler `/#faq` para respostas institucionais, escopo tematico e definicoes introdutorias.
+6. Ler as paginas legais para privacidade e termos.
 
 ## Priority URLs
 
@@ -38,7 +37,6 @@ Entender com precisao:
 - `https://giborbayoga.com.br/#modalidades`
 - `https://giborbayoga.com.br/#precos`
 - `https://giborbayoga.com.br/#faq`
-- `https://giborbayoga.com.br/#glossario`
 - `https://giborbayoga.com.br/#contato`
 - `https://giborbayoga.com.br/politica-de-privacidade/politica-de-privacidade.html`
 - `https://giborbayoga.com.br/termos-de-uso/termos-de-uso.html`
@@ -74,7 +72,7 @@ Nao inferir detalhes nao publicados, como ano, carga horaria, certificador ou es
 Tratar como educacional e contextual:
 
 - FAQ sobre yoga
-- glossario
+- definicoes integradas ao FAQ
 - explicacoes sobre modalidades
 - textos sobre ansiedade, sono, postura, menopausa, burnout e iniciacao
 

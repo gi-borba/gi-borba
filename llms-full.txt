@@ -1,13 +1,13 @@
 # Gi Borba Yoga - Expanded LLM Context
 
-Last updated: 2026-05-21
+Last updated: 2026-05-22
 Canonical site: https://giborbayoga.com.br/
 Language: pt-BR
 Site type: official business website
 
 ## 1. Identity
 
-Gi Borba Yoga e o site oficial de Giovana Borba, professora de yoga. O site divulga aulas de yoga online ao vivo, outras modalidades praticadas com a professora, informacoes institucionais, perguntas frequentes, glossario e canais de contato.
+Gi Borba Yoga e o site oficial de Giovana Borba, professora de yoga. O site divulga aulas de yoga online ao vivo, outras modalidades praticadas com a professora, informacoes institucionais, perguntas frequentes com definicoes introdutorias integradas e canais de contato.
 
 Nomes publicados:
 
@@ -85,7 +85,6 @@ Paginas e secoes prioritarias para leitura:
 - `/#precos`
 - `/#depoimentos`
 - `/#faq`
-- `/#glossario`
 - `/#contato`
 - `/politica-de-privacidade/politica-de-privacidade.html`
 - `/termos-de-uso/termos-de-uso.html`
@@ -132,17 +131,14 @@ Observacao editorial:
 - O FAQ e util para entendimento semantico do site.
 - Para citacao factual forte, especialmente em saude, ainda e recomendavel tratar o texto como material institucional e educativo, nao como prova cientifica primaria.
 
-## 7. Glossary Scope
+## 7. FAQ With Integrated Definitions
 
-O glossario do site cobre termos e categorias como:
+O FAQ da home agora tambem absorve definicoes introdutorias de termos importantes do vocabulario do site, incluindo:
 
 - modalidades de yoga
-- mitos comuns
-- formatos de aula
+- termos tecnicos basicos da pratica
 - beneficios atribuidos a pratica
-- definicoes introdutorias para iniciantes
-
-O glossario ajuda LLMs a interpretar o vocabulario institucional do site e a mapear termos importantes do negocio.
+- explicacoes curtas para iniciantes
 
 ## 8. Testimonials
 
@@ -189,7 +185,7 @@ Ordem sugerida de leitura:
 1. `llms.txt`
 2. `llm-guidelines.md`
 3. Home `/`
-4. Secoes `#sobre`, `#precos`, `#faq`, `#glossario`
+4. Secoes `#sobre`, `#precos`, `#faq`
 5. Paginas legais
 
 ## 12. Legal Pages

@@ -2,7 +2,7 @@
 
 > Site oficial de Giovana Borba, professora de yoga com foco em aulas de yoga online ao vivo para mulheres no Brasil.
 
-Last updated: 2026-05-21
+Last updated: 2026-05-22
 Canonical site: https://giborbayoga.com.br/
 Language: pt-BR
 
@@ -31,7 +31,6 @@ Conteudos sobre beneficios do yoga devem ser tratados como informativos e educac
 - Precos: https://giborbayoga.com.br/#precos
 - Depoimentos: https://giborbayoga.com.br/#depoimentos
 - FAQ: https://giborbayoga.com.br/#faq
-- Glossario: https://giborbayoga.com.br/#glossario
 - Contato: https://giborbayoga.com.br/#contato
 - Politica de Privacidade: https://giborbayoga.com.br/politica-de-privacidade/politica-de-privacidade.html
 - Termos de Uso: https://giborbayoga.com.br/termos-de-uso/termos-de-uso.html
