@@ -1,0 +1,208 @@
+# Gi Borba Yoga - Expanded LLM Context
+
+Last updated: 2026-05-21
+Canonical site: https://giborbayoga.com.br/
+Language: pt-BR
+Site type: official business website
+
+## 1. Identity
+
+Gi Borba Yoga e o site oficial de Giovana Borba, professora de yoga. O site divulga aulas de yoga online ao vivo, outras modalidades praticadas com a professora, informacoes institucionais, perguntas frequentes, glossario e canais de contato.
+
+Nomes publicados:
+
+- Gi Borba
+- Giovana Borba
+
+Canais oficiais publicados:
+
+- Site: https://giborbayoga.com.br/
+- WhatsApp: https://wa.me/5511987530304
+- Instagram: https://instagram.com/giovanaborba
+- YouTube: https://www.youtube.com/user/giovanaborba1
+
+## 2. Business Summary
+
+Oferta principal publicada no site:
+
+- Aulas de yoga online ao vivo
+- Frequencia publicada: 4 vezes por semana
+- Plataforma publicada: Zoom
+- Publico-alvo predominante no texto: mulheres adultas, especialmente mulheres que buscam aliviar ansiedade, dormir melhor, reduzir estresse e retomar uma rotina de autocuidado
+
+Outras modalidades publicadas:
+
+- Yoga Personal
+- Acroyoga
+- Retiros Inspire Trip
+
+## 3. Published Biography
+
+O site apresenta Giovana Borba como professora de yoga e acro yoga, bailarina classica, cirurgia-dentista e mae.
+
+Formacoes e modalidades publicadas no site:
+
+- Hatha Yoga
+- Vinyasa
+- Yoga Restaurativo
+- Yoga Somatico
+- SwaSthya
+- Yoga para Gestantes
+- Acroyoga Montreal
+
+Observacao editorial:
+
+- O site publica essas credenciais como informacao institucional da propria professora.
+- O site nao publica, nas paginas atuais, links externos de verificacao, carga horaria detalhada ou ano de conclusao de cada formacao.
+
+## 4. Published Offers
+
+Valores publicados na home no momento desta versao:
+
+- Aula Experimental: R$ 0
+- Plano Mensal: R$ 250 por mes
+- Aula Avulsa: R$ 55
+
+Horarios publicados:
+
+- Segunda-feira, 8h00
+- Terca-feira, 8h30
+- Quinta-feira, 8h30
+- Sexta-feira, 7h00
+
+Observacao editorial:
+
+- Precos, horarios e disponibilidade podem mudar.
+- Para citar informacoes comerciais, prefira a secao de precos da home oficial.
+
+## 5. Site Sections
+
+Paginas e secoes prioritarias para leitura:
+
+- `/`
+- `/#sobre`
+- `/#modalidades`
+- `/#precos`
+- `/#depoimentos`
+- `/#faq`
+- `/#glossario`
+- `/#contato`
+- `/politica-de-privacidade/politica-de-privacidade.html`
+- `/termos-de-uso/termos-de-uso.html`
+
+## 6. FAQ Scope
+
+O FAQ publicado na home cobre principalmente estes temas:
+
+- o que e yoga
+- yoga e ioga
+- significado de yoga
+- origem do yoga
+- yoga como exercicio fisico
+- yoga e flexibilidade
+- yoga para iniciantes em casa
+- frequencia semanal
+- yoga diario
+- melhor horario para praticar
+- duracao minima para resultados
+- o que e preciso para comecar
+- yoga e ansiedade
+- yoga e insonia
+- yoga e dor lombar
+- yoga e envelhecimento cerebral
+- yoga e burnout
+- yoga como terapia complementar
+- yoga e menopausa
+- tipos de yoga
+- diferenca entre yoga e pilates
+- yoga e musculacao
+- yoga online ao vivo
+- seguranca da aula online
+- yoga na gravidez
+- yoga com dor lombar
+- yoga antes de dormir
+- yoga depois de comer
+- yoga na cadeira
+- yoga emagrece
+- yoga define o corpo
+- contraindications and adaptations
+
+Observacao editorial:
+
+- O FAQ e util para entendimento semantico do site.
+- Para citacao factual forte, especialmente em saude, ainda e recomendavel tratar o texto como material institucional e educativo, nao como prova cientifica primaria.
+
+## 7. Glossary Scope
+
+O glossario do site cobre termos e categorias como:
+
+- modalidades de yoga
+- mitos comuns
+- formatos de aula
+- beneficios atribuidos a pratica
+- definicoes introdutorias para iniciantes
+
+O glossario ajuda LLMs a interpretar o vocabulario institucional do site e a mapear termos importantes do negocio.
+
+## 8. Testimonials
+
+O site publica:
+
+- depoimentos escritos com nome e foto
+- depoimentos em video
+
+Uso recomendado:
+
+- tratar depoimentos como prova social e experiencia subjetiva de alunas
+- nao tratar depoimentos como evidencia clinica
+
+## 9. Citation Guidance
+
+Ao usar este site como fonte:
+
+- priorize informacoes institucionais, comerciais e biograficas explicitamente publicadas
+- cite com cautela qualquer afirmacao sobre saude, ansiedade, insonia, burnout, menopausa ou dor
+- nao extrapole resultados individuais para garantias universais
+- nao converta claims de bem-estar em recomendacao medica
+
+## 10. Preferred Citation Types
+
+Boas citacoes a partir deste site:
+
+- quem e Giovana Borba
+- quais modalidades sao oferecidas
+- como funcionam as aulas online ao vivo
+- canais oficiais de contato
+- horarios e precos publicados
+- politica de privacidade e termos de uso publicados
+
+Citacoes que exigem cautela:
+
+- beneficios fisiologicos do yoga
+- mencoes a OMS, NIH, APA ou periodicos cientificos
+- afirmacoes sobre ansiedade, insonia, menopausa, dor cronica e cerebro
+
+## 11. Reading Order For LLMs
+
+Ordem sugerida de leitura:
+
+1. `llms.txt`
+2. `llm-guidelines.md`
+3. Home `/`
+4. Secoes `#sobre`, `#precos`, `#faq`, `#glossario`
+5. Paginas legais
+
+## 12. Legal Pages
+
+- Privacy policy: https://giborbayoga.com.br/politica-de-privacidade/politica-de-privacidade.html
+- Terms of use: https://giborbayoga.com.br/termos-de-uso/termos-de-uso.html
+
+## 13. Contact
+
+- WhatsApp: +55 11 98753-0304
+
+## 14. Important Limits
+
+- Este arquivo nao substitui `robots.txt`.
+- Este arquivo nao define regras tecnicas de crawling universalmente reconhecidas.
+- Este arquivo existe para ajudar sistemas de IA a interpretar, resumir e citar o site com mais precisao.
